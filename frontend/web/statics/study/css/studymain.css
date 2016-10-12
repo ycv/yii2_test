@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-8-24, 13:49:13
+    Author     : root
+*/
+
+/*
+左边导航<a>选中样式
+*/
+.studt-left-a-checked{
+    background-color:#f8881c;
+}
+.studt_left_a_checkedold{
+    background-color:greenyellow;
+}
+.studt-left-a-bianshou{
+    cursor: pointer;
+}

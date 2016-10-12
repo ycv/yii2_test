@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"电线电缆","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"BVR系列铜芯线","s":21567,"f":0},{"id":3,"pId":1,"open":false,"name":"BV系列铜芯线","s":21568,"f":0},{"id":4,"pId":1,"open":false,"name":"ZR系列铜芯线","s":21569,"f":0}]

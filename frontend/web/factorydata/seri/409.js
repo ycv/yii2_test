@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"变频器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"SY8000系列高性能矢量型变频器","s":19850,"f":0},{"id":3,"pId":1,"open":false,"name":"SN100G系列变频器","s":21114,"f":0},{"id":4,"pId":0,"open":false,"name":"软启动器","s":0,"f":1},{"id":5,"pId":4,"open":false,"name":"SJR3系列电机软启动器","s":19851,"f":0}]

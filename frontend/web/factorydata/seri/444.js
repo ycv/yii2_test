@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"断路器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"3AS2固封真空断路器","s":21557,"f":0},{"id":3,"pId":1,"open":false,"name":"VS1(ZN63A)真空断路器","s":21558,"f":0}]

@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"电容器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"电容器","s":21554,"f":0},{"id":3,"pId":0,"open":false,"name":"滤波器","s":0,"f":1},{"id":4,"pId":3,"open":false,"name":"滤波器","s":21555,"f":0},{"id":5,"pId":0,"open":false,"name":"熔断器","s":0,"f":1},{"id":6,"pId":5,"open":false,"name":"熔断器","s":21556,"f":0}]
