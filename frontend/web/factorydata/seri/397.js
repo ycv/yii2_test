@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"电容器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"BCMJYS系列三相电容器","s":19254,"f":0},{"id":3,"pId":1,"open":false,"name":"BCMJP系列三相电容器（普通型）","s":19287,"f":0}]

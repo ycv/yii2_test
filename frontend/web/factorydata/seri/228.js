@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"电力电容器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"BSMJ（BCMJ、BKMJ）系列分补电力电容器","s":8137,"f":0},{"id":3,"pId":1,"open":false,"name":"BSMJ（BCMJ、BKMJ）系列共补电力电容器","s":11364,"f":0}]

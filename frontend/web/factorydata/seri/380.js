@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"壁挂式直流电源系统","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"KXZDW系列壁挂直流屏","s":18663,"f":0},{"id":3,"pId":0,"open":false,"name":"智能高频直流电源屏","s":0,"f":1},{"id":4,"pId":3,"open":false,"name":"KGZDW系列智能高频直流屏","s":18664,"f":0}]

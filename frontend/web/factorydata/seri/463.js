@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"变压器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"S11系列电力变压器","s":21791,"f":0},{"id":3,"pId":1,"open":false,"name":"SCB10系列电力变压器","s":21792,"f":0},{"id":4,"pId":1,"open":false,"name":"S9系列电力变压器","s":21793,"f":0}]

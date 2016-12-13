@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"工业自动化","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"PLC可编程控制器","s":0,"f":1},{"id":3,"pId":2,"open":false,"name":"CP1可编程控制器","s":0,"f":1},{"id":4,"pId":3,"open":false,"name":"CP1E系列可编程控制器【经济、易用、高效】","s":19623,"f":0}]

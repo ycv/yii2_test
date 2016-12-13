@@ -1,0 +1,70 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CommodityForm	DefaultController.php	/^            $CommodityForm = new CommodityForm();$/;"	v
+CommodityForm	DefaultController.php	/^        $CommodityForm = new CommodityForm();$/;"	v
+DefaultController	DefaultController.php	/^class DefaultController extends Controller {$/;"	c
+actionAddarticledata	DefaultController.php	/^    public function actionAddarticledata() {$/;"	f
+actionAddlistsdata	DefaultController.php	/^    public function actionAddlistsdata() {$/;"	f
+actionGetdatasbybrandidajax	DefaultController.php	/^    public function actionGetdatasbybrandidajax() {$/;"	f
+actionGetdatasbypro_idajax	DefaultController.php	/^    public function actionGetdatasbypro_idajax() {$/;"	f
+actionGetfactorydata	DefaultController.php	/^    public function actionGetfactorydata() {$/;"	f
+actionGetseriesdata	DefaultController.php	/^    public function actionGetseriesdata($brand_id) {$/;"	f
+actionGetseriesdatabyajax	DefaultController.php	/^    public function actionGetseriesdatabyajax() {$/;"	f
+actionGetuserdatasbybrand_id	DefaultController.php	/^    public function actionGetuserdatasbybrand_id($brand_id) {$/;"	f
+actionIndex	DefaultController.php	/^    public function actionIndex() {$/;"	f
+actionListdatas	DefaultController.php	/^    public function actionListdatas() {$/;"	f
+actionShoppingcartdetails	DefaultController.php	/^    public function actionShoppingcartdetails() {$/;"	f
+assoc_unique	DefaultController.php	/^    public function assoc_unique($arr, $key) {$/;"	f
+bid	DefaultController.php	/^        $bid = Yii::$app->request->post()['bid'];$/;"	v
+brandIdtemp	DefaultController.php	/^            $brandIdtemp = $loginUserDatas['brand_id'];$/;"	v
+commodity	DefaultController.php	/^        $commodity = new CommodityForm();$/;"	v
+commoditylistfname_temp	DefaultController.php	/^            $commoditylistfname_temp = array();$/;"	v
+commoditylistpro_temp	DefaultController.php	/^            $commoditylistpro_temp = $pdatas['productdatas'];$/;"	v
+commoditylistpro_temp	DefaultController.php	/^            $commoditylistpro_temp = array();$/;"	v
+commoditylistpro_temp	DefaultController.php	/^        $commoditylistpro_temp = array();$/;"	v
+commoditylistxname_temp	DefaultController.php	/^            $commoditylistxname_temp = $pdatas['series_name'];$/;"	v
+commoditylistxname_temp	DefaultController.php	/^            $commoditylistxname_temp = array();$/;"	v
+commoditylistxname_temp	DefaultController.php	/^        $commoditylistxname_temp = $this->assoc_unique($loginUserseriesDatas, "series_id");$/;"	v
+datatemp	DefaultController.php	/^        $datatemp = array();$/;"	v
+dd	DefaultController.php	/^        $dd = $CommodityForm->getCommodtityAllDatas();$/;"	v
+f_fatas	DefaultController.php	/^            $f_fatas = $this->actionGetfactorydata();$/;"	v
+f_fatas	DefaultController.php	/^        $f_fatas = $this->actionGetfactorydata();$/;"	v
+factorydata	DefaultController.php	/^        $factorydata = FileHelper::file_get($file);$/;"	v
+factorydata_arr	DefaultController.php	/^        $factorydata_arr = array();$/;"	v
+factorydata_arr	DefaultController.php	/^        $factorydata_arr = json_decode($factorydata);$/;"	v
+factorydata_arrtemp	DefaultController.php	/^        $factorydata_arrtemp = array();$/;"	v
+file	DefaultController.php	/^        $file = Yii::$app->basePath . '\/web\/factorydata\/f.js';$/;"	v
+file	DefaultController.php	/^        $file = Yii::$app->basePath . '\/web\/factorydata\/seri\/' . $brand_id . '.js';$/;"	v
+id	DefaultController.php	/^        $id = Yii::$app->request->post()['id'];$/;"	v
+k	DefaultController.php	/^            foreach ($loginUserbranddatdas as $k => $v) {$/;"	v
+k	DefaultController.php	/^            foreach ($seriesdata_arr as $k => $value) {$/;"	v
+k	DefaultController.php	/^        foreach ($arr as $k => $v) {$/;"	v
+k	DefaultController.php	/^        foreach ($factorydata_arr as $k => $value) {$/;"	v
+key	DefaultController.php	/^        foreach ($commoditylistxname_temp as $key => $value) {$/;"	v
+key	DefaultController.php	/^        foreach ($loginUserseriesDatas as $key => $value) {$/;"	v
+lastmonthfirstday	DefaultController.php	/^        $lastmonthfirstday = date("Y-m-d", strtotime(date("Y-m-01") . " -1 month "));$/;"	v
+lastmonthlastday	DefaultController.php	/^        $lastmonthlastday = date("Y-m-t", strtotime(date("Y-m-01") . " -1 month "));$/;"	v
+layout	DefaultController.php	/^    public $layout = "user_main";$/;"	v
+loginUserDatas	DefaultController.php	/^        $loginUserDatas = $CommodityForm->getbrand_idbylatestid();$/;"	v
+loginUserDatas	DefaultController.php	/^        $loginUserDatas = array();$/;"	v
+loginUserbranddatdas	DefaultController.php	/^            $loginUserbranddatdas = $CommodityForm->getbranddatdasbybrand_id();$/;"	v
+loginUserseriesDatas	DefaultController.php	/^        $loginUserseriesDatas = $CommodityForm->getseriesdatasbybrand_id($brand_id);$/;"	v
+pdatas	DefaultController.php	/^            $pdatas = $this->actionGetuserdatasbybrand_id($brandIdtemp);$/;"	v
+productdatas	DefaultController.php	/^            $productdatas = $CommodityForm->actionGetdatasbypro_id($id);$/;"	v
+productdatas	DefaultController.php	/^            $productdatas = $CommodityForm->getproductdatasbyseries_id($sid);$/;"	v
+productdatas	DefaultController.php	/^            $productdatas = $this->actionGetuserdatasbybrand_id($bid);$/;"	v
+productdatas	DefaultController.php	/^        $productdatas = array();$/;"	v
+s_fatas	DefaultController.php	/^        $s_fatas = $this->actionGetseriesdata($brand_id);$/;"	v
+serieIdtemp	DefaultController.php	/^        $serieIdtemp = $loginUserseriesDatas[0]['series_id'];$/;"	v
+seriesIdtemp	DefaultController.php	/^            $seriesIdtemp = $pdatas['series_id'];$/;"	v
+seriesdata	DefaultController.php	/^        $seriesdata = FileHelper::file_get($file);$/;"	v
+seriesdata_arr	DefaultController.php	/^        $seriesdata_arr = array();$/;"	v
+seriesdata_arr	DefaultController.php	/^        $seriesdata_arr = json_decode($seriesdata);$/;"	v
+seriesdata_arrtemp	DefaultController.php	/^        $seriesdata_arrtemp = array();$/;"	v
+seriesnum	DefaultController.php	/^            $seriesnum = $CommodityForm->getseriesnumbyseries_id();$/;"	v
+sid	DefaultController.php	/^        $sid = Yii::$app->request->post()['sid'];$/;"	v
+tmp_arr	DefaultController.php	/^        $tmp_arr = array();$/;"	v

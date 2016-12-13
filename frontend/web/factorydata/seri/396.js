@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"软起动器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"RDJR3系列软起动器（中文型）","s":19252,"f":0}]

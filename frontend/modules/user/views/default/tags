@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+error	userlist.php	/^                                                    error: function () {$/;"	j
+error	userlist.php	/^                                                error: function () {$/;"	j
+getboldbybrandIdtemp	userlist.php	/^                                    function getboldbybrandIdtemp(b_id) {$/;"	f
+getboldbyseriesIdtemp	userlist.php	/^                                    function getboldbyseriesIdtemp(s_id) {$/;"	f
+k	adddatas.php	/^                    <?php foreach ($f_fatas as $k => $v) { ?>$/;"	v
+k	userlist.php	/^                        <?php foreach ($f_fatas as $k => $v) { ?>$/;"	v
+k	userlist.php	/^                        <?php foreach ($p_fatas as $k => $v) { ?>$/;"	v
+k	userlist.php	/^                        <?php foreach ($s_fatas as $k => $v) { ?>$/;"	v
+success	userlist.php	/^                                                    success: function (json) {$/;"	j
+success	userlist.php	/^                                                success: function (json) {$/;"	j
+switchdatabyseries_id	userlist.php	/^                                    function switchdatabyseries_id(s_id) {$/;"	f

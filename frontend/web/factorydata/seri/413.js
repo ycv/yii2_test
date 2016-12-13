@@ -1,0 +1,1 @@
+[{"id":1,"pId":0,"open":false,"name":"消防EPS","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"FEPS-SK系列单相消防应急电源","s":19985,"f":0},{"id":3,"pId":0,"open":false,"name":"直流屏","s":0,"f":1},{"id":4,"pId":3,"open":false,"name":"BZDW系列壁挂式直流柜","s":19986,"f":0},{"id":5,"pId":3,"open":false,"name":"GZDW系列PK直流屏","s":20096,"f":0}]
