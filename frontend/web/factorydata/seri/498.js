@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"火灾报警","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"HCS系列智能漏电火灾报警系统","s":24864,"f":0},{"id":3,"pId":1,"open":false,"name":"HCS-T系列防火漏电探测器","s":24865,"f":0},{"id":4,"pId":1,"open":false,"name":"HCS-M型电流式电火灾监控探测器","s":24866,"f":0}]

@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"微型断路器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"SGDB7-63系列小型断路器","s":11402,"f":0},{"id":3,"pId":1,"open":false,"name":"SGDB7-32系列（相线＋中性线）小型断路器","s":11403,"f":0},{"id":4,"pId":1,"open":false,"name":"SGDB7L-63系列小型漏电断路器","s":11404,"f":0}]

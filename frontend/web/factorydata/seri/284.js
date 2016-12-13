@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"高压真空断路器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"ZN63A（VS1）-12系列户内高压真空断路器","s":12560,"f":0},{"id":3,"pId":1,"open":false,"name":"ZN63A（VS1）-12G系列户内高压真空断路器","s":20917,"f":0}]

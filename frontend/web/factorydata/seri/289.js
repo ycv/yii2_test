@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"剩余电流式电气火灾监控探测器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"SYFL1系列电气火灾监控器探测器","s":12742,"f":0},{"id":3,"pId":1,"open":false,"name":"SYFL1-F系列单路电气火灾监控器","s":12743,"f":0},{"id":4,"pId":1,"open":false,"name":"SYFL1-F系列多路电气火灾监控器","s":12746,"f":0},{"id":5,"pId":1,"open":false,"name":"SYT系列电气火灾探测器（配与多路监控器）","s":12747,"f":0}]

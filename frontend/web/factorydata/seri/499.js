@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"保护开关","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"HJDCP数字控制保护开关","s":24867,"f":0}]

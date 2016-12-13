@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"变压器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"S□系列全密封油浸式配电变压器","s":21579,"f":0},{"id":3,"pId":1,"open":false,"name":"S(CB)H15-10kV系列变压器","s":21580,"f":0},{"id":4,"pId":1,"open":false,"name":"SC(B)□-10kV系列树脂绝缘干式变压器","s":21581,"f":0}]
