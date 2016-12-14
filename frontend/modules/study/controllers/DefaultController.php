@@ -20,8 +20,6 @@ class DefaultController extends BaseStudyController {
         //echo $this->is_admin;
         //$this->actionGetaddressdatabyjson($AdduserForm_addressid);
         //echo $AdduserForm_addressid;die;
-
-
         return $this->render('index');
     }
 
