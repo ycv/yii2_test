@@ -63,9 +63,9 @@ use yii\helpers\Url;
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">			            
-                    <li><a href="###" onclick="showAtRight('userList.php')"><i class="fa fa-users"></i> 用户列表a</a></li>	
-                    <li><a href="###" onclick="showAtRight('productList.php')"><i class="fa fa-list-alt"></i> 产品列表b</a></li>
-                    <li><a href="###" onclick="showAtRight('recordList.php')" ><i class="fa fa-list"></i> 订单列表</a></li>	
+                    <li><a   class="infi__sethands" onclick="showAtRight('userList.php')"><i class="fa fa-users"></i> 用户列表a</a></li>	
+                    <li><a   class="infi__sethands" onclick="showAtRight('productList.php')"><i class="fa fa-list-alt"></i> 产品列表b</a></li>
+                    <li><a   class="infi__sethands" onclick="showAtRight('recordList.php')" ><i class="fa fa-list"></i> 订单列表</a></li>	
                 </ul>
 
             </div>

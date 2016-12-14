@@ -15,8 +15,12 @@ and open the template in the editor.
     background-color:#f8881c;
 }
 .studt_left_a_checkedold{
-    background-color:greenyellow;
+    /*background-color:greenyellow;*/
+    background-color:#F8889D;
 }
 .studt-left-a-bianshou{
+    cursor: pointer;
+}
+.infi__sethands{
     cursor: pointer;
 }

@@ -29,12 +29,12 @@ class CommodityForm extends Model {
 
     public function rules() {
         return [
-            [['brand_id', 'number', 'is_droits', 'shop_id'], 'integer'],
-            [['singleplugs_dis'], 'double'],
-            [['discount_period', 'series_idarr'], 'required'],
-            [['pro_picture'], 'string', 'max' => 1000],
-            [['remarks', 'title', 'color'], 'string', 'max' => 255],
-            [['article_content', 'email'], 'string'],
+                [['brand_id', 'number', 'is_droits', 'shop_id'], 'integer'],
+                [['singleplugs_dis'], 'double'],
+                [['discount_period', 'series_idarr'], 'required'],
+                [['pro_picture'], 'string', 'max' => 1000],
+                [['remarks', 'title', 'color'], 'string', 'max' => 255],
+                [['article_content', 'email'], 'string'],
         ];
     }
 

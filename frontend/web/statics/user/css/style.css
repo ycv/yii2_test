@@ -6,8 +6,9 @@ Author: ThemeBucket
 @import url('../../common/css/bootstrap.min.css');
 @import url('../../common/css/bootstrap-reset.css');
 @import url('../../common/css/jquery-ui-1.10.3.css');
-@import url('../../common/fonts/font-awesome.min.css');
+@import url('../../common/css/font-awesome.min.css');
 /*
+font-awesome.min
 @import url('../fonts/css/font-awesome.css');
 */
 body {

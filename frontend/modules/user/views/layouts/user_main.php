@@ -15,7 +15,7 @@ use yii\helpers\Url;
         <title>燕子飞</title>
         <link href="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/user/css/') ?>style.css" rel="stylesheet" type="text/css" />
 
-        <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>jquery-1.7.1.min.js"    type="text/javascript" ></script>
+        <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>jquery-2.1.4.min.js"    type="text/javascript" ></script>
         <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>jquery_lzb_ext.js"    type="text/javascript" ></script>
         <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/user/js/') ?>user_ShoppingCart.js"    type="text/javascript" ></script>
         <script type="text/javascript">

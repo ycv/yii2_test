@@ -37,12 +37,12 @@ class Commodity extends \yii\db\ActiveRecord {
      */
     public function rules() {
         return [
-            [['brand_id', 'series_id', 'number', 'is_droits', 'shop_id', 'discount_period'], 'integer'],
-            [['singleplugs_dis'], 'double'], //double
-            [['discount_period'], 'required'],
-            [['pro_picture'], 'string', 'max' => 1000],
-            [['remarks', 'color', 'email', 'title'], 'string', 'max' => 255],
-            [['shop_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['shop_id' => 'id']],
+                [['brand_id', 'series_id', 'number', 'is_droits', 'shop_id', 'discount_period'], 'integer'],
+                [['singleplugs_dis'], 'double'],
+                [['discount_period'], 'required'],
+                [['pro_picture'], 'string', 'max' => 1000],
+                [['remarks', 'color', 'email', 'title'], 'string', 'max' => 255],
+                [['shop_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['shop_id' => 'id']],
         ];
     }
 

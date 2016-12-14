@@ -183,7 +183,7 @@ use yii\helpers\Url;
 <!-- Placed js at the end of the document so the pages load faster -->
 <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/user/js/') ?>jquery-ui-1.9.2.custom.min.js"    type="text/javascript" charset="utf-8"  ></script>
 <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>jquery-migrate-1.2.1.min.js"    type="text/javascript" charset="utf-8"  ></script>
-<script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/user/js/') ?>bootstrap.min.js"    type="text/javascript" charset="utf-8" ></script>
+<script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>bootstrap.min.js"    type="text/javascript" charset="utf-8" ></script>
 <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>modernizr.min.js"    type="text/javascript" charset="utf-8"  ></script>
 <script src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/user/js/') ?>jquery.nicescroll.js"    type="text/javascript" charset="utf-8" ></script>
 <!--easy pie chart-->

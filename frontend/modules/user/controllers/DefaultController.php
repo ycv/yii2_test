@@ -41,8 +41,8 @@ class DefaultController extends Controller {
         $loginUserDatas = array();
         //用户 搜索数据 得到品牌id根据最新一条数据
         $loginUserDatas = $CommodityForm->getbrand_idbylatestid();
-        //echo "<pre>";var_dump($loginUserDatas);die;
-
+        //echo "<pre>";var_dump($loginUserDatas);
+        //echo count($loginUserDatas);die;
         if (count($loginUserDatas) > 0) {
             //厂家名称
             $commoditylistfname_temp = array();
@@ -82,7 +82,7 @@ class DefaultController extends Controller {
 
             return $this->render('userlist', ['seriesnum' => $seriesnum, 'seriesIdtemp' => $seriesIdtemp, 'brandIdtemp' => $brandIdtemp, 'f_fatas' => $commoditylistfname_temp, 's_fatas' => $commoditylistxname_temp, 'p_fatas' => $commoditylistpro_temp]);
         } else {
-            $this->actionAddlistsdata();
+            return $this->actionAddlistsdata();
         }
     }
 

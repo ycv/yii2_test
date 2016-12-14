@@ -5,8 +5,8 @@
     }
     g.fn._fadeIn = g.fn.fadeIn;
     var i = document.documentMode || 0;
-    var d = g.browser.msie && ((g.browser.version < 8 && !i) || i < 8);
-    var e = g.browser.msie && /MSIE 6.0/.test(navigator.userAgent) && !i;
+    //ar d = g.browser.msie && ((g.browser.version < 8 && !i) || i < 8);
+    //var e = g.browser.msie && /MSIE 6.0/.test(navigator.userAgent) && !i;
     g.blockUI = function (o) {
         c(window, o);
     };
@@ -45,7 +45,7 @@
             if (g.browser.msie) {
                 this.style.zoom = 1
             }
-            c(this, o)
+            c(this, o);
         })
     };
     g.fn.unblock = function (o) {
