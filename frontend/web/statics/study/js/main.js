@@ -4,7 +4,6 @@
  */
 $(document).ready(function () {
     $('ul.nav > li').click(function (e) {
-
         //e.preventDefault();	加上这句则导航的<a>标签会失效
         $('ul.nav > li').removeClass('active');
         $(this).addClass('active');

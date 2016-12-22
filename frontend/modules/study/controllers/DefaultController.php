@@ -142,6 +142,18 @@ class DefaultController extends BaseStudyController {
     }
 
     /**
+     * 数据统计
+     * 地域统计
+     */
+    public function actionDatastongjiditu() {
+        //加载右边内容样式
+        $this->layout = "main_right";
+        echo "xxxxxxx";
+        die;
+        return $this->render('datastongjiditu');
+    }
+
+    /**
      * 发送短信
      */
     public function actionSendmessage() {

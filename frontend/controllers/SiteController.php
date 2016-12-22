@@ -69,11 +69,9 @@ class SiteController extends Controller {
     /**
      * 主页
      * Displays homepage.
-     *
      * @return mixed
      */
     public function actionIndex() {
-        //echo "aa";die;
         return $this->render('index');
     }
 

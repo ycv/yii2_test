@@ -32,7 +32,7 @@ use yii\helpers\Url;
 
                 document.write('<scr' + 'ipt type="text/javascript" src="' + basepath + '/statics/common/js/jquery-1.12.3.min.js?v=' + version_number + '"></scr' + 'ipt>');
                 document.write('<scr' + 'ipt type="text/javascript" src="' + basepath + '/statics/common/js/bootstrap.min.js?v=' + version_number + '"></scr' + 'ipt>');
-                document.write('<scr' + 'ipt type="text/javascript" src="' + basepath + '/statics/study/js/main.min.js?v=' + version_number + '"></scr' + 'ipt>');
+                document.write('<scr' + 'ipt type="text/javascript" src="' + basepath + '/statics/study/js/main.js?v=' + version_number + '"></scr' + 'ipt>');
 
 
                 /*html5shiv：用于解决IE9以下版本浏览器对HTML5新增标签不识别，并导致CSS不起作用的问题。*/
@@ -58,14 +58,15 @@ use yii\helpers\Url;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?= Url::toRoute(['/study/default/index']) ?>">Demo</a>
+                <a class="navbar-brand" href="<?= Yii::$app->homeUrl; ?>">Demo</a>
+                <!-- <a class="navbar-brand" href="<?= Url::toRoute(['/study/default/index']) ?>">Demo</a> -->
             </div>
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">			            
                     <li><a   class="infi__sethands" onclick="showAtRight('userList.php')"><i class="fa fa-users"></i> 用户列表a</a></li>	
                     <li><a   class="infi__sethands" onclick="showAtRight('productList.php')"><i class="fa fa-list-alt"></i> 产品列表b</a></li>
-                    <li><a   class="infi__sethands" onclick="showAtRight('recordList.php')" ><i class="fa fa-list"></i> 订单列表</a></li>	
+                    <li><a   class="infi__sethands" onclick="showAtRight('recordList.php')" ><i class="fa fa-list"></i> 订单列表</a></li>
                 </ul>
 
             </div>
@@ -104,11 +105,22 @@ use yii\helpers\Url;
                         <li data2="left-cpgl" data3="prolistdatas" ><a class="studt-left-a-bianshou" ><i class="fa fa-list-alt"></i> 产品列表</a></li>
                     </ul>
 
-                    <li><a href="#recordMeun" class="nav-header menu-first collapsed" data-toggle="collapse">
+                    <li data1="" data2="" data3="" >
+                        <a href="#recordMeun" class="nav-header menu-first collapsed" data-toggle="collapse">
                             <i class="fa fa-file-text"></i>&nbsp; 订单管理 <span class="sr-only">(current)</span></a>
                     </li> 
                     <ul id="recordMeun" class="nav nav-list collapse menu-second" data4="erjibiaoqian" >
                         <li><a  onclick="showAtRight('recordList.php', this)" ><i class="fa fa-list"></i> 订单列表</a></li>
+                    </ul>
+
+                    <li data1="left-sjtj" data2="" data3="" >
+                        <a href="#infisetsjtj" class="nav-header menu-first collapsed" data-toggle="collapse">
+                            <i class="fa fa-file-text"></i>&nbsp; 数据统计 <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <ul id="infisetsjtj" class="nav nav-list collapse menu-second" data4="erjibiaoqian" >
+                        <li data2="left-sjtj" data3="datastongjiditu" ><a class="studt-left-a-bianshou" ><i class="fa fa-list-alt"></i> 地域统计</a></li>
+                        <li data2="left-sjtj" data3="prolistdatas" ><a class="studt-left-a-bianshou" ><i class="fa fa-list-alt"></i> 产品列表</a></li>
                     </ul>
 
                 </ul>
