@@ -115,7 +115,7 @@ use yii\helpers\Url;
 
                     <li data1="left-sjtj" data2="" data3="" >
                         <a href="#infisetsjtj" class="nav-header menu-first collapsed" data-toggle="collapse">
-                            <i class="fa fa-file-text"></i>&nbsp; 数据统计 <span class="sr-only">(current)</span>
+                            <i class="fa fa-ticket"></i>&nbsp; 数据统计 <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <ul id="infisetsjtj" class="nav nav-list collapse menu-second" data4="erjibiaoqian" >
