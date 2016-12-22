@@ -192,15 +192,4 @@ var study_dynamicLoading = {
         script.type = 'text/javascript';
         head.appendChild(script);
     }
-}
-
-/*
- //简单的加载css
- function addCSS(csspath) {
- var link = document.createElement('link');
- link.type = 'text/css';
- link.rel = 'stylesheet';
- link.href = csspath;
- document.getElementsByTagName("head")[0].appendChild(link);
- }
- */
+};

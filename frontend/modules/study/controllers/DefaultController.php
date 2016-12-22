@@ -148,9 +148,9 @@ class DefaultController extends BaseStudyController {
     public function actionDatastongjiditu() {
         //加载右边内容样式
         $this->layout = "main_right";
-        echo "xxxxxxx";
-        die;
-        return $this->render('datastongjiditu');
+        $datasdemo = "aassdd";
+        //  echo "xxxxxxx";die;
+        return $this->render('datastongjiditu', ['demod' => $datasdemo]);
     }
 
     /**

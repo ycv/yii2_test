@@ -28,7 +28,7 @@ use yii\helpers\Url;
                 document.write('<link' + ' type="text/css" rel="styleSheet" href="' + basepath + '/statics/study/css/index.css?v=' + version_number + '"' + ' />');
                 /*将默认字体从宋体换成微软雅黑（个人比较喜欢微软雅黑，移动端和桌面端显示效果比较接近）*/
                 document.write('<link' + ' type="text/css" rel="styleSheet" href="' + basepath + '/statics/common/css/font-change.min.css?v=' + version_number + '"' + ' />');
-                document.write('<link' + ' type="text/css" rel="styleSheet" href="' + basepath + '/statics/study/css/studymain.css?v=' + version_number + '"' + ' />');
+                document.write('<link' + ' type="text/css" rel="styleSheet" href="' + basepath + '/statics/study/css/studymain.min.css?v=' + version_number + '"' + ' />');
 
                 document.write('<scr' + 'ipt type="text/javascript" src="' + basepath + '/statics/common/js/jquery-1.12.3.min.js?v=' + version_number + '"></scr' + 'ipt>');
                 document.write('<scr' + 'ipt type="text/javascript" src="' + basepath + '/statics/common/js/bootstrap.min.js?v=' + version_number + '"></scr' + 'ipt>');
@@ -119,7 +119,7 @@ use yii\helpers\Url;
                         </a>
                     </li>
                     <ul id="infisetsjtj" class="nav nav-list collapse menu-second" data4="erjibiaoqian" >
-                        <li data2="left-sjtj" data3="datastongjiditu" ><a class="studt-left-a-bianshou" ><i class="fa fa-list-alt"></i> 地域统计</a></li>
+                        <li data2="left-sjtj" data3="datastongjiditu" ><a class="studt-left-a-bianshou" ><i class="fa fa-diamond"></i> 地域统计</a></li>
                         <li data2="left-sjtj" data3="prolistdatas" ><a class="studt-left-a-bianshou" ><i class="fa fa-list-alt"></i> 产品列表</a></li>
                     </ul>
 
