@@ -1,0 +1,6 @@
+.gitignore
+*.tgz
+vendor
+composer.phar
+composer.lock
+
