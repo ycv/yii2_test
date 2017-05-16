@@ -22,9 +22,11 @@ return [
             // this is the name of the session cookie used for login on the frontend
             'name' => 'advanced-frontend',
         ],
+        //日志配置
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
+                //记录错误级别
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
@@ -38,7 +40,7 @@ return [
         'urlManager' => [
             //启用路由
             'enablePrettyUrl' => true,
-//            'enableStrictParsing' => false,
+            'enableStrictParsing' => false,
             //false为隐藏 index.php
             'showScriptName' => true,
             //url重写规则
