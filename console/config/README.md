@@ -1,0 +1,3 @@
+.gitignore
+main-local.php
+params-local.php
