@@ -1,9 +1,10 @@
 <?php
+
 return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yanzi2',
+            'dsn' => 'mysql:host=localhost;dbname=yanzi',
             'username' => 'root',
             'password' => '111111',
             'charset' => 'utf8',
