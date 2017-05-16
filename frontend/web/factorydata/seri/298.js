@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"软启动器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"CMC系列软启动器","s":13355,"f":0}]

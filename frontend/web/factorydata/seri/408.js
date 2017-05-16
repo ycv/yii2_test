@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"小型断路器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"GTB1-63系列小型断路器","s":19801,"f":0},{"id":3,"pId":0,"open":false,"name":"小型漏电断路器","s":0,"f":1},{"id":4,"pId":3,"open":false,"name":"GTB1L-63系列小型漏电断路器","s":19804,"f":0}]

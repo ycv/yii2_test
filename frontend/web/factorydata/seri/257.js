@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"断路器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"GWM1L系列剩余电流保护塑壳断路器","s":10065,"f":0},{"id":3,"pId":1,"open":false,"name":"GWM1E系列电子式塑壳断路器","s":10066,"f":0}]

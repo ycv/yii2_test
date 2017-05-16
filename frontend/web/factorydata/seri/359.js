@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"电抗器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"CKSC系列干式铁心串联电抗器","s":17098,"f":0},{"id":3,"pId":1,"open":false,"name":"CKGKL系列干式空心串联电抗器","s":17099,"f":0},{"id":4,"pId":1,"open":false,"name":"XKGKL系列空心限流电抗器","s":17100,"f":0}]

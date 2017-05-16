@@ -1,1 +1,0 @@
-[{"id":1,"pId":0,"open":false,"name":"电抗器","s":0,"f":1},{"id":2,"pId":1,"open":false,"name":"SCSR系列三相电容器用串联电抗器","s":13709,"f":0},{"id":3,"pId":1,"open":false,"name":"DCSR系列单相电容器用串联电抗器","s":13710,"f":0},{"id":4,"pId":1,"open":false,"name":"ACL系列变频器输入侧用串联电抗器","s":13711,"f":0}]
