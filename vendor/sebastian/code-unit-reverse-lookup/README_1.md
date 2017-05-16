@@ -1,0 +1,10 @@
+.gitignore
+
+.idea
+composer.lock
+composer.phar
+vendor/
+cache.properties
+build/LICENSE
+build/README.md
+build/*.tgz

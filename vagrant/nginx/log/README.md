@@ -1,0 +1,7 @@
+.gitignore
+
+# nginx logs
+backend-access.log
+backend-error.log
+frontend-access.log
+frontend-error.log
