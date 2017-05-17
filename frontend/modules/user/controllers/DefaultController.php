@@ -42,12 +42,6 @@ class DefaultController extends Controller {
 
         return $this->render('test', array("model" => $model, "test_data" => $data));
     }
-
-    /**
-     * Excel导入
-     */
-    public function actionExcelimport() {
-        return $this->render('excelimport');
-    }
+ 
 
 }
