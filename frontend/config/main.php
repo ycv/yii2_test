@@ -29,7 +29,25 @@ return [
                 //记录错误级别
                 [
                     'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning', 'info', 'trace'],
+                ],
+                //错误、警告日志存储位置
+                [
+                    'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
+                    'categories' => ['error'],
+                    'logFile' => '@app/runtime/logs/error/requests.log',
+                    'maxFileSize' => 1024 * 2,
+                    'maxLogFiles' => 20,
+                ],
+                //调试、自定义日志存储位置
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['info', 'trace'],
+                    'categories' => ['error'],
+                    'logFile' => '@app/runtime/logs/info/notification.log',
+                    'maxFileSize' => 1024 * 2,
+                    'maxLogFiles' => 50,
                 ],
             ],
         ],
@@ -42,15 +60,15 @@ return [
             'enablePrettyUrl' => true,
             'enableStrictParsing' => false,
             //false为隐藏 index.php
-            'showScriptName' => true,
+            'showScriptName' => false,
             //url重写规则
             'rules' => [
 //                //oauth2.0
 //                'POST oauth2/<action:\w+>' => 'oauth2/oauth2/<action>',
-//                '' => 'site/index',
-//                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-                //微信端
+                '' => 'site/index',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 'user/<controller:\w+>/<action:\w+>/<id:\w+>' => 'user/<controller>/<action>',
+                'user/<controller:\w+>/<action:\w+>' => 'user/<controller>/<action>',
                 'infi/<controller:\w+>/<action:\w+>' => 'infi/<controller>/<action>',
 //                //后台权限
 //                'rbac/<controller:\w+>/<action:\w+>' => 'rbac/<controller>/<action>',
