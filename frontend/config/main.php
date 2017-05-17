@@ -50,7 +50,7 @@ return [
 //                '' => 'site/index',
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 //微信端
-//                'infi/<controller:\w+>/<action:\w+>/<id:\w+>' => 'infi/<controller>/<action>',
+                'user/<controller:\w+>/<action:\w+>/<id:\w+>' => 'user/<controller>/<action>',
                 'infi/<controller:\w+>/<action:\w+>' => 'infi/<controller>/<action>',
 //                //后台权限
 //                'rbac/<controller:\w+>/<action:\w+>' => 'rbac/<controller>/<action>',
@@ -66,6 +66,9 @@ return [
     'modules' => [
         'infi' => [
             'class' => 'frontend\modules\infi\InfiModule',
+        ],
+        'user' => [
+            'class' => 'frontend\modules\user\UserModule',
         ],
     ],
     'params' => $params,
