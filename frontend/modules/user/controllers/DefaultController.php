@@ -36,13 +36,18 @@ class DefaultController extends Controller {
         //创建一个数组
         $data = array();
         //把需要传递给视图的数据，放到数组中
-        $hello_str = "Hello GOD";
-        $test_arr = array(1, 2);
-        $data['view_hello_str'] = $hello_str;
-        $data['view_hello_arr'] = $test_arr;
+        $data['view_hello_str'] = "Hello GOD";
+        $data['view_hello_arr'] = array(1, 2);
 
 
         return $this->render('test', array("model" => $model, "test_data" => $data));
+    }
+
+    /**
+     * Excel导入
+     */
+    public function actionExcelimport() {
+        return $this->render('excelimport');
     }
 
 }

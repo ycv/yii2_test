@@ -11,15 +11,15 @@ use yii\bootstrap\ActiveForm;
 <h1><?= Html::encode($test_data['view_hello_arr'][0]); ?></h1>
 <hr/>
 <h5>显示别的页面内容</h5>
-<h1><?= $this->render('test_about'); ?></h1>
+<h1>---<?= $this->render('test_about'); ?>---</h1>
 <br/>
 <h1><?= $this->render('test_about', array("v_hello_str" => "hello world2")); ?></h1>
 <hr/>
 <hr/>
 <hr>
-    <?php $form = ActiveForm::begin(['id' => 'form_id']); ?>
+<?php $form = ActiveForm::begin(['id' => 'form_id']); ?>
 <div style="color:#999;margin:1em 0">
-<?= Html::a('方法跳转', ['default/index']) ?>
+    <?= Html::a('方法跳转', ['default/index']) ?>
 </div>
 <!-- Listbox with prompt text -->
 <?=
@@ -41,7 +41,7 @@ $form->field($model, 'test_id')->listBox(
 ?>
 
 <hr/>
-使用输入文本框
+使用输入文本框s
 <?= $form->field($model, 'test_id'); ?>
 <?= $form->field($model, 'test_id')->textInput(array('style' => 'width:150px;'))->hint('11Please enter your name')->label(' 22') ?>
 <hr/>
