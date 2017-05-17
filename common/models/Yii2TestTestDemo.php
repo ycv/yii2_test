@@ -5,7 +5,7 @@ namespace common\models;
 use Yii;
 
 /**
- * This is the model class for table "infi_testdemo".
+ * This is the model class for table "yii2test_testdemo".
  *
  * @property integer $id
  * @property string $test_id

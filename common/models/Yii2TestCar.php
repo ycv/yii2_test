@@ -5,7 +5,7 @@ namespace common\models;
 use Yii;
 
 /**
- * This is the model class for table "t".
+ * This is the model class for table "yii2Test_car".
  *
  * @property integer $ID
  * @property string $FIRST_LETTER
