@@ -15,15 +15,15 @@ if (!YII_ENV_TEST) {
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
-        //配置允许远程调试，显示调试状态栏
-        'allowedIPs' => ['127.0.0.1', '::1']
+            //配置允许远程调试，显示调试状态栏
+//        'allowedIPs' => ['127.0.0.1', '::1']
     ];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        //配置允许远程调试，显示Gii
-        'allowedIPs' => ['127.0.0.1', '::1']
+            //配置允许远程调试，显示Gii
+//        'allowedIPs' => ['127.0.0.1', '::1']
     ];
 }
 

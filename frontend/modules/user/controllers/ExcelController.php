@@ -3,9 +3,7 @@
 namespace frontend\modules\user\controllers;
 
 use YII;
-use yii\web\Controller;
 use common\components\Upload;
-use yii\helpers\Url;
 use frontend\components\BaseUserController;
 
 class ExcelController extends BaseUserController {
@@ -27,6 +25,10 @@ class ExcelController extends BaseUserController {
 
         if (YII::$app->request->post()) {
             echo "xxxx";
+            die;
+        }
+        if (YII::$app->request->get()) {
+            echo "sssssssss";
             die;
         }
         return $this->render('excelimport');
