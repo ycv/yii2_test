@@ -9,13 +9,12 @@ use common\models\Yii2TestTestDemo;
 class DefaultController extends Controller {
 
     public function actionIndex() {
-        echo "aaaaaaa";
-        die;
         //类的映射
         YII::$classMap['common\models\Yii2TestTestDemo'] = 'G:\workspaces\yii2_test\common\models\Yii2TestTestDemo.php';
         $oinfitest = new Yii2TestTestDemo;
-        echo "aaaaaaa";
-        die;
+//        echo "<pre>";
+//        print_r($oinfitest);
+//        die;
         return $this->render('index');
     }
 
