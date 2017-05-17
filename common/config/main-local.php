@@ -8,6 +8,12 @@ return [
             'username' => 'root',
             'password' => '111111',
             'charset' => 'utf8',
+            //数据库表前缀
+            'tablePrefix' => '',
+            //开启Schema缓存
+            'enableSchemaCache' => true,
+            'schemaCacheDuration' => 3600,
+            'schemaCache' => 'cache',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',

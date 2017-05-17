@@ -10,6 +10,31 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        //配置URL重写
+        'urlManager' => [
+            //启用路由
+            'enablePrettyUrl' => true,
+            'enableStrictParsing' => false,
+            //false为隐藏 index.php
+            'showScriptName' => false,
+            //url重写规则
+            'rules' => [
+//                //oauth2.0
+//                'POST oauth2/<action:\w+>' => 'oauth2/oauth2/<action>',
+                '' => 'site/index',
+                
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+                
+                
+                'user/<controller:\w+>/<action:\w+>/<id:\w+>' => 'user/<controller>/<action>',
+                'user/<controller:\w+>/<action:\w+>' => 'user/<controller>/<action>',
+                
+                
+                'infi/<controller:\w+>/<action:\w+>' => 'infi/<controller>/<action>',
+//                //后台权限
+//                'rbac/<controller:\w+>/<action:\w+>' => 'rbac/<controller>/<action>',
+            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],
@@ -53,26 +78,6 @@ return [
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
-        ],
-        //配置URL重写
-        'urlManager' => [
-            //启用路由
-            'enablePrettyUrl' => true,
-            'enableStrictParsing' => false,
-            //false为隐藏 index.php
-            'showScriptName' => false,
-            //url重写规则
-            'rules' => [
-//                //oauth2.0
-//                'POST oauth2/<action:\w+>' => 'oauth2/oauth2/<action>',
-                '' => 'site/index',
-                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-                'user/<controller:\w+>/<action:\w+>/<id:\w+>' => 'user/<controller>/<action>',
-                'user/<controller:\w+>/<action:\w+>' => 'user/<controller>/<action>',
-                'infi/<controller:\w+>/<action:\w+>' => 'infi/<controller>/<action>',
-//                //后台权限
-//                'rbac/<controller:\w+>/<action:\w+>' => 'rbac/<controller>/<action>',
-            ],
         ],
 //        'urlManager' => [
 //            'enablePrettyUrl' => true,

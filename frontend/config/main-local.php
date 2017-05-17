@@ -1,5 +1,6 @@
 <?php
 
+//前台应用配置及其它配置
 $config = [
     'components' => [
         'request' => [

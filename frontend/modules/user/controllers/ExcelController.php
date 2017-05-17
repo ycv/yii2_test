@@ -24,13 +24,10 @@ class ExcelController extends BaseUserController {
 //  if (isset(Yii::$app->request->post()["nickname"])) {
 
         if (YII::$app->request->post()) {
-            echo "xxxx";
+            echo "xssssssxxx";
             die;
         }
-        if (YII::$app->request->get()) {
-            echo "sssssssss";
-            die;
-        }
+
         return $this->render('excelimport');
     }
 
