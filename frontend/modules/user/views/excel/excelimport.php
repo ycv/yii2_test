@@ -2,12 +2,10 @@
 
 use yii\helpers\Url;
 ?>
-
 <div>
-
-    <form action="<?= Url::toRoute(['/user/excel/excelimport']) ?>" method="post"> 
+    <form action="<?= Url::toRoute(['/user/excel/excelimport']) ?>" method="post" enctype="multipart/form-data">
         <input hidden name="_csrf-frontend" value="<?= Yii::$app->request->csrfToken ?>"/>
-        上传文件：<input type="text" name="upfile" /><br> 
-        <input type="submit" value="上传"name="asdas" />
+        上传文件：<input type="file" name="upfile" /><br> 
+        <button type="submit" >保存</button>
     </form> 
-</div>
+</div> 
