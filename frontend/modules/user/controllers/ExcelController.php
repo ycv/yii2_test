@@ -283,10 +283,9 @@ class ExcelController extends BaseUserController {
     public function excelRead($filexcelname) {
         //读取xlsx 文件内容 引入PHPexcel组件类
         require Yii::$app->vendorPath . '/PHPExcel/PHPExcel.php';
-
-
-
         $objPHPExcel = new \PHPExcel();
+
+
 
 
 
