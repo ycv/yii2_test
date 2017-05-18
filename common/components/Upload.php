@@ -54,4 +54,11 @@ class Upload extends Object {
         return substr(hash('sha512', $randomData), 0, $tokenLen);
     }
 
+    /**
+     * 获取文件后缀名函数
+     */
+    public function fileext($filename) {
+        return substr(strrchr($filename, '.'), 1);
+    }
+
 }

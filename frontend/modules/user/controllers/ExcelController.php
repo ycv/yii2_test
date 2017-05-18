@@ -10,24 +10,30 @@ class ExcelController extends BaseUserController {
 
     public $layout = "userlist_comment";
 
-//    public $enableCsrfValidation = false; //屏蔽 csrfToken验证
-
     /**
      * Excel导入  
      */
     public function actionExcelimport() {
 
 //        echo $this->is_admin; die;
-//        echo "<pre>";
-//        var_dump(YII::$app->request->post());
-//        die;
-//  if (isset(Yii::$app->request->post()["nickname"])) {
 
         if (YII::$app->request->post()) {
-            echo "<pre>";
-            print_r(YII::$app->request->post());
-            echo "xssssssxxx";
-            die;
+            $upload = new Upload();
+            //创建文件目录
+            $filepath = 'uploads/excel/' . date('Y/m/d', time()) . '/';
+            $upload->mkDirs($filepath);
+            //生成随机文件名
+            $ad_randname = $upload->generateRandFileName();
+            //获取文件后缀名
+            $fileSuffixName = $upload->fileext($_FILES['upfile']['name']);
+            $uploadfile = $filepath . $ad_randname . "." . $fileSuffixName;
+            if (move_uploaded_file($_FILES['upfile']['tmp_name'], $uploadfile)) {
+                echo $fileSuffixName;
+                die;
+            } else {
+                echo "上传失败!";
+                die;
+            }
         }
 
         return $this->render('excelimport');
