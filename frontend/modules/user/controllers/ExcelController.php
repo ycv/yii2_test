@@ -14,9 +14,7 @@ class ExcelController extends BaseUserController {
      * Excel导入  
      */
     public function actionExcelimport() {
-
 //        echo $this->is_admin; die;
-
         if (YII::$app->request->post()) {
             $upload = new Upload();
             //创建文件目录
@@ -26,6 +24,7 @@ class ExcelController extends BaseUserController {
             $ad_randname = $upload->generateRandFileName();
             //获取文件后缀名
             $fileSuffixName = $upload->fileext($_FILES['upfile']['name']);
+            //文件生成路径
             $uploadfile = $filepath . $ad_randname . "." . $fileSuffixName;
             if (move_uploaded_file($_FILES['upfile']['tmp_name'], $uploadfile)) {
                 $this->excelRead($uploadfile);
@@ -282,7 +281,14 @@ class ExcelController extends BaseUserController {
      */
     public function excelRead($filexcelname) {
         //读取xlsx 文件内容 引入PHPexcel组件类
-        require Yii::$app->vendorPath . '/PHPExcel/PHPExcel.php';
+        require Yii::$app->vendorPath . '/PHPExcel/PHPExcel/IOFactory.php';
+        
+        $objPHPExcelReader = \PHPExcel_IOFactory::load($filexcelname);  //加载excel文件
+
+        $sheet = $objPHPExcelReader->getSheet(0); // 读取第一个工作表(编号从 0 开始)
+        echo $highestRow = $sheet->getHighestRow(); // 取得总行数
+        echo "<hr>" . $filexcelname;
+        die;
         $objPHPExcel = new \PHPExcel();
 
 
