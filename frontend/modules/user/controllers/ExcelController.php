@@ -28,8 +28,7 @@ class ExcelController extends BaseUserController {
             $fileSuffixName = $upload->fileext($_FILES['upfile']['name']);
             $uploadfile = $filepath . $ad_randname . "." . $fileSuffixName;
             if (move_uploaded_file($_FILES['upfile']['tmp_name'], $uploadfile)) {
-                echo $fileSuffixName;
-                die;
+                $this->excelRead($uploadfile);
             } else {
                 echo "上传失败!";
                 die;
@@ -276,6 +275,18 @@ class ExcelController extends BaseUserController {
             echo urlencode($fileex);
             exit;
         }
+    }
+
+    /**
+     * Excel读取
+     */
+    public function excelRead($filePath) {
+        //引入PHPexcel组件类
+        require Yii::$app->vendorPath . '/PHPExcel/PHPExcel.php';
+
+
+        echo "asd";
+        die;
     }
 
 }
