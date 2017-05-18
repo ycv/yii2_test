@@ -24,6 +24,8 @@ class ExcelController extends BaseUserController {
 //  if (isset(Yii::$app->request->post()["nickname"])) {
 
         if (YII::$app->request->post()) {
+            echo "<pre>";
+            print_r(YII::$app->request->post());
             echo "xssssssxxx";
             die;
         }

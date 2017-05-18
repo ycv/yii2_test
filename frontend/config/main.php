@@ -72,7 +72,7 @@ return [
                     'categories' => ['error'],
                     'logFile' => '@app/runtime/logs/info/notification.log',
                     'maxFileSize' => 1024 * 2,
-                    'maxLogFiles' => 50,
+                    'maxLogFiles' => 20,
                 ],
             ],
         ],
