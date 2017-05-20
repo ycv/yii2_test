@@ -10,9 +10,10 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html  lang="<?= Yii::$app->language ?>">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>jQuery网站导航菜单滑条代码</title>
-        <link type="text/css" rel="stylesheet" href="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/css/') ?>report_base.css"/>
+        <meta http-equiv="Content-Type" content="text/html" charset="<?= Yii::$app->charset ?>"/>
+        <title><?= Html::encode($this->title) ?></title>
+        <!--引用css-->
+        <?= Html::cssFile('@web/statics/common/css/report_base.css') ?>
     </head>
     <body>
         <!--头部菜单-->
@@ -113,9 +114,22 @@ AppAsset::register($this);
         </div>
         <!--/头部菜单-->
 
-        <script type="text/javascript"  src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>jquery.js" />
-        <script type="text/javascript"  src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/js/') ?>reportother.js" />
 
+
+
+        <!--数据内容-->
+        <?= $content; ?>
+        <!--/数据内容-->
+
+
+
+
+
+
+
+        <!--引用js-->
+        <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
+        <?= Html::jsFile('@web/statics/common/js/reportother.js') ?>
     </body>
 </html>
 <?php $this->endPage() ?>

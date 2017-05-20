@@ -16,7 +16,7 @@ class ReportController extends BaseUserController {
     public function actionProjectreport() {
         $ReportFrom = new ReportFrom();
         $reportArr = $ReportFrom->getProjectReportLists();
-        return $this->render('reportlist');
+        return $this->render('reportlist', ["reportArr" => $reportArr]);
 //        echo "<pre>";
 //        var_dump($reportArr);
 //        die;
