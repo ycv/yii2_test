@@ -13,7 +13,10 @@ AppAsset::register($this);
         <meta http-equiv="Content-Type" content="text/html" charset="<?= Yii::$app->charset ?>"/>
         <title><?= Html::encode($this->title) ?></title>
         <!--引用css-->
-        <?= Html::cssFile('@web/statics/common/css/report_base.css') ?>
+        <?= Html::cssFile('@web/statics/report/css/trackingreport.css') ?>
+        <!--引用js-->
+        <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
+        <?= Html::jsFile('@web/statics/common/js/reportother.js') ?>
     </head>
     <body>
         <!--头部菜单-->
@@ -27,83 +30,28 @@ AppAsset::register($this);
                     <div class="t_c_bottom">
                         <ul>
                             <li class="thisli">
-                                <a href="#"><em>官方首页</em><i>Home</i></a>
+                                <a href="#"><em>项目跟踪报表</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>集团概况</em><i>About Us</i></a>
-                                <div class="Nodes">
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_top.png" />
-                                    <ul>
-                                        <li><a href="#">公司简介</a></li>
-                                        <li><a href="#">总部扶持</a></li>
-                                        <li><a href="#">服务团队</a></li>
-                                    </ul>
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_bottom.png" />
-                                </div>
+                                <a href="#"><em>项目统计</em><i>Count</i></a>
                             </li>
                             <li>
-                                <a href="#"><em>品牌中心</em><i>Brand</i></a>
-                                <div class="Nodes">
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_top.png" />
-                                    <ul>
-                                        <li><a href="#">品牌文化</a></li>
-                                        <li><a href="#">市场前景</a></li>
-                                        <li><a href="#">品牌形象</a></li>
-                                        <li><a href="#">店面形象</a></li>
-                                    </ul>
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_bottom.png" />
-                                </div>
+                                <a href="#"><em>top10目录</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>产品中心</em><i>Product </i></a>
-                                <div class="Nodes">
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_top.png" />
-                                    <ul>
-                                        <li><a href="#">产品案例</a></li>
-                                        <li><a href="#">核心产品</a></li>
-                                        <li><a href="#">主流产品</a></li>
-                                    </ul>
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_bottom.png" />
-                                </div>
+                                <a href="#"><em>Top10明细</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>项目优势</em><i>Advantages</i></a>
-                                <div class="Nodes">
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_top.png" />
-                                    <ul>
-                                        <li><a href="#">产品优势</a></li>
-                                        <li><a href="#">投资优势</a></li>
-                                        <li><a href="#">店面优势</a></li>
-                                        <li><a href="#">总部优势</a></li>
-                                    </ul>
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_bottom.png" />
-                                </div>
+                                <a href="#"><em>KA明细</em><i>Detailed</i></a>
                             </li>
                             <li>
-                                <a href="#"><em>加盟我们</em><i>Join Us</i></a>
-                                <div class="Nodes">
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_top.png" />
-                                    <ul>
-                                        <li><a href="#">加盟模式</a></li>
-                                        <li><a href="#">加盟流程</a></li>
-                                        <li><a href="#">成功案例</a></li>
-                                    </ul>
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_bottom.png" />
-                                </div>
+                                <a href="#"><em>行业报表明细</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>新闻中心</em><i>News</i></a>
-                                <div class="Nodes">
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_top.png"/>
-                                    <ul>
-                                        <li><a href="#">品牌新闻</a></li>
-                                        <li><a href="#">行业新闻</a></li>
-                                    </ul>
-                                    <img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>menu_bottom.png" />
-                                </div>
+                                <a href="#"><em>Top10汇总</em><i>News</i></a>
                             </li>
                             <li>
-                                <a href="#"><em>联系我们</em><i>Contact</i></a>
+                                <a href="#"><em>项目数据检查</em><i></i></a>
                             </li>
                         </ul>
                         <div class="thisMenu" id="thisMenu"></div>
@@ -118,7 +66,10 @@ AppAsset::register($this);
 
 
         <!--数据内容-->
-        <?= $content; ?>
+        <div class="report_trackingDIV">
+            <?= $content; ?>
+        </div>
+
         <!--/数据内容-->
 
 
@@ -127,9 +78,7 @@ AppAsset::register($this);
 
 
 
-        <!--引用js-->
-        <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
-        <?= Html::jsFile('@web/statics/common/js/reportother.js') ?>
+
     </body>
 </html>
 <?php $this->endPage() ?>
