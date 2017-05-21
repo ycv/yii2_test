@@ -13,7 +13,7 @@ AppAsset::register($this);
         <meta http-equiv="Content-Type" content="text/html" charset="<?= Yii::$app->charset ?>"/>
         <title><?= Html::encode($this->title) ?></title>
         <!--引用css-->
-        <?= Html::cssFile('@web/statics/report/css/trackingreport.css') ?>
+        <?= Html::cssFile('@web/statics/common/css/report_base.css') ?>
         <!--引用js-->
         <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
         <?= Html::jsFile('@web/statics/common/js/reportother.js') ?>
