@@ -48,7 +48,7 @@ AppAsset::register($this);
                                 <a href="#"><em>行业报表明细</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>Top10汇总</em><i>News</i></a>
+                                <a href="#"><em>Top10汇总</em><i></i></a>
                             </li>
                             <li>
                                 <a href="#"><em>项目数据检查</em><i></i></a>
