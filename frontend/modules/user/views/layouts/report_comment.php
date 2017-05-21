@@ -64,12 +64,10 @@ AppAsset::register($this);
 
 
 
-
+        <br><br><br>
+        <br><br><br>
         <!--数据内容-->
-        <div class="report_trackingDIV">
-            <?= $content; ?>
-        </div>
-
+        <?= $content; ?>
         <!--/数据内容-->
 
 
