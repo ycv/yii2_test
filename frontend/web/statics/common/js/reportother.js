@@ -15,6 +15,7 @@ $(function () {
     thisMenu.css({left: (mNow * 104 + mt) + "px"});
     menus.hover(function () {
         MenuMove($(this), ($(this).index() * 104 + mt), 1);
+        getReportListDatas($(this).attr("id"));
     }, function () {
         MenuMove($(this), (mNow * 104 + mt), 0);
     });
@@ -38,3 +39,47 @@ $(function () {
     }
 
 });
+
+function getReportListDatas(id) {
+    //获取reportDatas 缓存数据   把字符串转换成JSON对象
+    var reportDatas = JSON.parse(localStorage.getItem("ReportDatas" + id));
+    if (reportDatas && reportDatas != null) {
+        setReportHTML(reportDatas);
+    } else {
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            data: {'reporttype': id, '_csrf-frontend': _csrf_frontend},
+            url: basepath + "/user/report/getreportlistdatas",
+            async: true,
+            success: function (json) {
+                if (json.retval) {
+                    //设置 reportDatas 缓存数据 将JSON对象转化成字符串  JSON.stringify(data);
+                    localStorage.setItem("ReportDatas" + id, JSON.stringify(json.data));
+                    setReportHTML_Top(json.data);
+                } else {
+//                alert("Error");
+                }
+            }
+        });
+    }
+}
+
+
+
+/**
+ * Top10目录
+ */
+function setReportHTML_Top(data) {
+    $("#reprot_list_").empty();
+    var listHTML = '';
+    $.each(data, function (i, v) {
+        listHTML += i % 2 == 0 ? "<tr>" : "'<tr class='odd'>'";
+        listHTML += '<td class="numeric_middle">' + v.number + '</td>';
+        listHTML += '<td class="numeric_middle">' + v.entry_name + '</td>';
+        listHTML += '<td class="numeric">' + parseFloat(v.Estimated_amount_of_purchase).toFixed(2) + '</td>';
+
+        listHTML += '</tr>';
+    });
+    $("#reprot_list_").html(listHTML);
+}

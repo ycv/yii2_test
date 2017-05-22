@@ -30,22 +30,20 @@ $this->title = 'Top10目录';
                 <th width="10%">预计采购金额(K)</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="reprot_list_">
             <?php
-            if (count($reportArr["Top_directory"]) > 0) {
+            if (count($reportArr["Top_directory"]) > 110) {
                 foreach ($reportArr["Top_directory"] as $key => $value) {
                     ?>
                     <tr>
                         <td class="numeric_middle"><?= $value["number"]; ?></td>
                         <td class="numeric_middle"><?= $value["entry_name"]; ?></td>
-                        <td class="numeric"><?= round($value["Estimated_amount_of_purchase"], 2); ?></td>
+                        <td class="numeric"><?= sprintf("%01.2f", $value["Estimated_amount_of_purchase"]); ?></td>
                     </tr>
                     <?php
                 }
             }
             ?>
-
-
 
         </tbody>
     </table>

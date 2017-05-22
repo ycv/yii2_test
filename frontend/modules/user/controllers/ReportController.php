@@ -20,11 +20,26 @@ class ReportController extends BaseUserController {
         //Top10目录
         $reportArr["Top_directory"] = $ReportFrom->getReportTopLists();
 
-
 //        echo "<pre>";
 //        var_dump($reportArr);
 //        die;
         return $this->render('reportlist', ["reportArr" => $reportArr]);
+    }
+
+    /**
+     * jquery 获取项目跟踪报表数据
+     */
+    public function actionGetreportlistdatas() {
+        $json ['retval'] = false;
+        $json ['data'] = [];
+        if (isset(Yii::$app->request->post()["reporttype"])) {
+            $ReportFrom = new ReportFrom();
+            $json ['data'] = $ReportFrom->getReportTopLists();
+            $json ['retval'] = true;
+        }
+
+        echo json_encode($json);
+        die();
     }
 
 }

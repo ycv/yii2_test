@@ -18,6 +18,10 @@ AppAsset::register($this);
         <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
         <?= Html::jsFile('@web/statics/common/js/reportother.js') ?>
     </head>
+    <script type="text/javascript">
+        var basepath = '<?= Yii::$app->request->hostInfo ?>';
+        var _csrf_frontend = '<?= Yii::$app->request->csrfToken ?>';
+    </script>
     <body>
         <!--头部菜单-->
         <div class="top">
@@ -29,10 +33,10 @@ AppAsset::register($this);
                     </div>
                     <div class="t_c_bottom">
                         <ul>
-                            <li class="thisli">
+                            <li class="thisli" id="report_list_1">
                                 <a href="#"><em>项目跟踪报表</em><i></i></a>
                             </li>
-                            <li>
+                            <li id="report_list_2">
                                 <a href="#"><em>项目统计</em><i>Count</i></a>
                             </li>
                             <li>
