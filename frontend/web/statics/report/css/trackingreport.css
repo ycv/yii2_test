@@ -142,6 +142,13 @@
     text-align: right;
 }
 
+.fancyDarkTable .numeric_middle {
+    /* text */
+    text-align: center;
+}
+
+
+
 .fancyDarkTable td, .fancyDarkTable th {
     border: 1px solid #778899;
     padding: 5px;

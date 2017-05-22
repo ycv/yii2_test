@@ -6,7 +6,7 @@ use yii\helpers\Url;
 
 AppAsset::register($this);
 
-$this->title = '项目跟踪报表2';
+$this->title = 'Top10目录';
 ?>
 <!--引用css-->
 <?= Html::cssFile('@web/statics/report/css/trackingreport.css') ?>
@@ -20,26 +20,33 @@ $this->title = '项目跟踪报表2';
         $('#myTable05').fixedHeaderTable('show', 1000);
     });
 </script>
-<div  style="height: 400px;width: 100%;overflow-x: auto;  overflow-y: auto;">
-    <table class="   fancyDarkTable" id="myTable05" cellpadding="0" cellspacing="0">
+
+<div  style="height: 400px;width: 100%;">
+    <table class="fancyDarkTable" id="myTable05" cellpadding="0" cellspacing="0" style="width: 90%;">
         <thead>
             <tr>
-                <th>编号</th>
-                <th>项目名称</th>
-                <th>预计采购金额(K)</th>
+                <th width="40%">编号</th>
+                <th width="40%">项目名称</th>
+                <th width="10%">预计采购金额(K)</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Firefox</td>
-                <td class="numeric">1,990</td>
-                <td class="numeric">32.61%</td>
-            </tr>
-            <tr>
-                <td>Firefox</td>
-                <td  >1,990</td>
-                <td >32.61%</td>
-            </tr>
+            <?php
+            if (count($reportArr["Top_directory"]) > 0) {
+                foreach ($reportArr["Top_directory"] as $key => $value) {
+                    ?>
+                    <tr>
+                        <td class="numeric_middle"><?= $value["number"]; ?></td>
+                        <td class="numeric_middle"><?= $value["entry_name"]; ?></td>
+                        <td class="numeric"><?= round($value["Estimated_amount_of_purchase"], 2); ?></td>
+                    </tr>
+                    <?php
+                }
+            }
+            ?>
+
+
+
         </tbody>
     </table>
 </div>
