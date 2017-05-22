@@ -60,3 +60,12 @@ a:hover img.opacity { filter:alpha(opacity=80); opacity:0.8; -moz-opacity:0.8; }
 .top .t_c_cen .t_c_bottom ul li .Nodes ul li{width:80px;height:30px;float:none;padding:0;margin:0;border-bottom: 1px dashed #e73c7c;}
 .top .t_c_cen .t_c_bottom ul li .Nodes ul li a{display:block;width:80px;height:30px;color:#FFF;line-height:30px;}
 .top .t_c_cen .t_c_bottom ul li .Nodes ul li a:hover{text-decoration:underline;color:#333;background:#FFF;}
+
+
+
+.report_trackingDIV{
+    margin:0 auto;
+    margin-top: 90px;
+    position:relative;
+    width:80%;z-index:10;border:1px solid red; 
+}
