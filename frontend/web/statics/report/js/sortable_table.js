@@ -166,6 +166,7 @@ $.fn.CloneTable = function (oSrcTable, iRowStart, iRowEnd, iColumnEnd) {
                  }*/
 
                 newTd.height(20);
+                newTd.width(120);
 
                 //newTd.height(oidTd.outerHeight(true));
                 newTd.width(oidTd.outerWidth(true));
