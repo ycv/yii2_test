@@ -136,90 +136,6 @@
     box-shadow: 0 0 3px #6495ed;
 }
 
-
-.fancyTable td, .fancyTable th {
-    /* appearance */
-    border: 1px solid #778899;
-
-    /* size */
-    padding: 5px;
-
-    width: 70px;
-}
-
-.fancyTable {
-    /* text */
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.fancyTable tbody tr td {
-    /* appearance */
-    background-color: #eef2f9;
-    background-image: -moz-linear-gradient(
-        top,
-        rgba(255,255,255,0.4) 0%,
-        rgba(255,255,255,0.2) 50%,
-        rgba(255,255,255,0.1) 51%,
-        rgba(255,255,255,0.0) 100%);
-
-    background-image: -webkit-gradient(
-        linear, left top, left bottom,
-        color-stop(0%,rgba(255,255,255,0.4)),
-        color-stop(50%,rgba(255,255,255,0.2)),
-        color-stop(51%,rgba(255,255,255,0.1)),
-        color-stop(100%,rgba(255,255,255,0.0)));
-
-    /* text */
-    color: #262c31;
-    font-size: 11px;
-}
-
-.fancyTable tbody tr.odd td {
-    /* appearance */
-    background-color: #d6e0ef;
-    background-image: -moz-linear-gradient(
-        top,
-        rgba(255,255,255,0.4) 0%,
-        rgba(255,255,255,0.2) 50%,
-        rgba(255,255,255,0.1) 51%,
-        rgba(255,255,255,0.0) 100%);
-
-    background-image: -webkit-gradient(
-        linear, left top, left bottom,
-        color-stop(0%,rgba(255,255,255,0.4)),
-        color-stop(50%,rgba(255,255,255,0.2)),
-        color-stop(51%,rgba(255,255,255,0.1)),
-        color-stop(100%,rgba(255,255,255,0.0)));
-}
-
-.fancyTable thead tr th,
-.fancyTable thead tr td,
-.fancyTable tfoot tr th, 
-.fancyTable tfoot tr td {
-    /* appearance */
-    background-color: #8ca9cf;
-    background-image: -moz-linear-gradient(
-        top,
-        rgba(255,255,255,0.4) 0%,
-        rgba(255,255,255,0.2) 50%,
-        rgba(255,255,255,0.1) 51%,
-        rgba(255,255,255,0.0) 100%);
-
-    background-image: -webkit-gradient(
-        linear, left top, left bottom,
-        color-stop(0%,rgba(255,255,255,0.4)),
-        color-stop(50%,rgba(255,255,255,0.2)),
-        color-stop(51%,rgba(255,255,255,0.1)),
-        color-stop(100%,rgba(255,255,255,0.0)));
-
-    /* text */
-    color: #121517;
-    font-size: 12px;
-    font-weight: bold;
-    text-shadow: 0 1px 1px #e8ebee;
-}
-
-
 /* Fancy Dark Table */	
 .fancyDarkTable .numeric {
     /* text */
@@ -227,8 +143,9 @@
 }
 
 .fancyDarkTable td, .fancyDarkTable th {
-    border: 1px solid #000000;
+    border: 1px solid #778899;
     padding: 5px;
+    width: 70px;
 }
 
 .fancyDarkTable thead tr th {
@@ -237,14 +154,13 @@
 
 .fancyDarkTable {
     /*border-collapse: separate;*/
-
     /* text */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .fancyDarkTable tbody tr td {
     /* appearance */
-    background-color: #48535e;
+    background-color: #48534F;
     background-image: -moz-linear-gradient(
         top,
         rgba(255,255,255,0.0) 0%,
@@ -275,18 +191,23 @@
     background-image: -moz-linear-gradient(
         top,
         rgba(255,255,255,0.0) 0%,
-        rgba(255,255,255,0.02) 100%);
+        rgba(255,255,255,0.02) 20%,
+        rgba(255,255,255,0.1) 51%,
+        rgba(255,255,255,0.0) 100%);
 
     background-image: -webkit-gradient(
         linear, left top, left bottom,
         color-stop(0%,rgba(255,255,255,0.0)),
-        color-stop(100%,rgba(255,255,255,0.02)));
+        color-stop(20%,rgba(255,255,255,0.02)),
+        color-stop(51%,rgba(255,255,255,0.1)),
+        color-stop(100%,rgba(255,255,255,0.0)));
     border-right-color: #000;
 }
 
 .fancyDarkTable thead tr th,
+.fancyDarkTable thead tr td,
+.fancyDarkTable tfoot tr th, 
 .fancyDarkTable tfoot tr td {
-    /* appearance */
     background-color: #0b0d10;
     background-image: -moz-linear-gradient(
         top,
@@ -306,11 +227,22 @@
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    text-shadow: 0 -1px 1px #000;
+    text-shadow: 0 -1px 1px #e8ebee;
 }
+
 
 .fancyDarkTable .fht-head {
     -webkit-box-shadow: 0 5px 10px #000;
     z-index: 1;
     position: relative;
+}
+
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
