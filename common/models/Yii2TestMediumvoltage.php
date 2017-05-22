@@ -18,7 +18,7 @@ use Yii;
  * @property string $Estimated_amount_of_purchase
  * @property string $Actual_purchase_amount
  */
-class Yii2TestProjectreport extends \yii\db\ActiveRecord {
+class Yii2TestMediumvoltage extends \yii\db\ActiveRecord {
 
     /**
      * @inheritdoc
