@@ -33,29 +33,29 @@ AppAsset::register($this);
                     </div>
                     <div class="t_c_bottom">
                         <ul>
-                            <li id="report_list_1">
-                                <a href="#"><em>项目跟踪报表</em><i></i></a>
+                            <li class="<?= Yii::$app->controller->action->id == 'reportprojectlist' ? 'thisli' : '' ?>" id="report_list_reportprojectlist">
+                                <a href="<?= Url::toRoute(['/user/report/reportprojectlist']) ?>"><em>项目跟踪报表</em><i></i></a>
                             </li>
                             <li id="report_list_2">
-                                <a href="#"><em>项目统计</em><i>Count</i></a>
+                                <a style="cursor:pointer;"><em>项目统计</em><i>Count</i></a>
                             </li>
-                            <li class="thisli" >
-                                <a href="#"><em>top10目录</em><i></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><em>Top10明细</em><i></i></a>
+                            <li class="<?= Yii::$app->controller->action->id == 'projectreport' ? 'thisli' : '' ?>" id="report_list_projectreport" >
+                                <a href="<?= Url::toRoute(['/user/report/projectreport']) ?>"><em>top10目录</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>KA明细</em><i>Detailed</i></a>
+                                <a style="cursor:pointer;"><em>Top10明细</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>行业报表明细</em><i></i></a>
+                                <a style="cursor:pointer;"><em>KA明细</em><i>Detailed</i></a>
                             </li>
                             <li>
-                                <a href="#"><em>Top10汇总</em><i></i></a>
+                                <a style="cursor:pointer;"><em>行业报表明细</em><i></i></a>
                             </li>
                             <li>
-                                <a href="#"><em>项目数据检查</em><i></i></a>
+                                <a style="cursor:pointer;"><em>Top10汇总</em><i></i></a>
+                            </li>
+                            <li>
+                                <a style="cursor:pointer;"><em>项目数据检查</em><i></i></a>
                             </li>
                         </ul>
                         <div class="thisMenu" id="thisMenu"></div>
