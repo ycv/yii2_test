@@ -33,13 +33,13 @@ AppAsset::register($this);
                     </div>
                     <div class="t_c_bottom">
                         <ul>
-                            <li class="thisli" id="report_list_1">
+                            <li id="report_list_1">
                                 <a href="#"><em>项目跟踪报表</em><i></i></a>
                             </li>
                             <li id="report_list_2">
                                 <a href="#"><em>项目统计</em><i>Count</i></a>
                             </li>
-                            <li>
+                            <li class="thisli" >
                                 <a href="#"><em>top10目录</em><i></i></a>
                             </li>
                             <li>

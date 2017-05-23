@@ -32,8 +32,8 @@ $this->title = 'Top10目录';
         </thead>
         <tbody id="reprot_list_">
             <?php
-            if (count($reportArr["Top_directory"]) > 110) {
-                foreach ($reportArr["Top_directory"] as $key => $value) {
+            if (count($reportArr) > 0) {
+                foreach ($reportArr as $key => $value) {
                     ?>
                     <tr>
                         <td class="numeric_middle"><?= $value["number"]; ?></td>

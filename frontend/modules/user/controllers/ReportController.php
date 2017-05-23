@@ -18,12 +18,12 @@ class ReportController extends BaseUserController {
         $reportArr = array();
 //        $reportArr = $ReportFrom->getProjectReportLists();
         //Top10目录
-        $reportArr["Top_directory"] = $ReportFrom->getReportTopLists();
+        $reportTop_directory = $ReportFrom->getReportTopLists();
 
 //        echo "<pre>";
 //        var_dump($reportArr);
 //        die;
-        return $this->render('reportlist', ["reportArr" => $reportArr]);
+        return $this->render('reportlist', ["reportArr" => $reportTop_directory]);
     }
 
     /**

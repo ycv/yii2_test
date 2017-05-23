@@ -34,17 +34,18 @@ $(function () {
             nodes.css({height: _h + "px"}).animate({height: "0px"}, 300);
             MenuAuto = setTimeout(function () {
                 thisMenu.animate({left: lefts + "px"}, 300);
-            }, 1250);
+            }, 200);
         }
     }
 
 });
 
 function getReportListDatas(id) {
+    return;
     //获取reportDatas 缓存数据   把字符串转换成JSON对象
     var reportDatas = JSON.parse(localStorage.getItem("ReportDatas" + id));
     if (reportDatas && reportDatas != null) {
-        setReportHTML(reportDatas);
+        setReportHTML_Top(reportDatas);
     } else {
         $.ajax({
             type: "POST",
