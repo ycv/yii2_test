@@ -5,6 +5,7 @@ namespace frontend\modules\user\controllers;
 use YII;
 use common\components\Upload;
 use frontend\components\BaseUserController;
+use common\components\Phpexcelreadfilter;
 
 class ExcelController extends BaseUserController {
 
@@ -27,13 +28,16 @@ class ExcelController extends BaseUserController {
             //文件生成路径
             $uploadfile = $filepath . $ad_randname . "." . $fileSuffixName;
             if (move_uploaded_file($_FILES['upfile']['tmp_name'], $uploadfile)) {
-                $this->excelRead($uploadfile);
+                $d = $this->excelRead($uploadfile, 5, 6);
+
+                echo "<pre>";
+                var_dump($d);
+                die;
             } else {
                 echo "上传失败!";
                 die;
             }
         }
-
         return $this->render('excelimport');
     }
 
@@ -277,47 +281,48 @@ class ExcelController extends BaseUserController {
     }
 
     /**
-     * Excel读取
+     * 读取excel转换成数组
+     * @param string $excelFile 文件路径
+     * @param int $startRow 开始读取的行数
+     * @param int $endRow 结束读取的行数
+     * @retunr array
      */
-    public function excelRead($filexcelname) {
-        echo $filexcelname;
-        die;
-
-
-
-
-
-
-
-
-
-        //读取xlsx 文件内容 引入PHPexcel组件类
-        require Yii::$app->vendorPath . '/PHPExcel/PHPExcel/IOFactory.php';
-        $objPHPExcelReader = \PHPExcel_IOFactory::load($filexcelname);  //加载excel文件
-        /* 读取excel文件中的第一个工作表 */
-        $currentSheet = $objPHPExcelReader->getSheet(0); // 读取第一个工作表(编号从 0 开始)
-        /* 取得总行数 */
-        $allRow = $currentSheet->getHighestRow();
-        /* 取得最大的列号 */
-        $allColumn = $currentSheet->getHighestColumn();
-
-        for ($currentRow = 5; $currentRow <= $allRow; $currentRow++) {
-            /* 从第B列开始输出 */
-            for ($currentColumn = 'B'; $currentColumn <= $allColumn; $currentColumn++) {
-                /*  ord()将字符转为十进制数 */
-                $val = $currentSheet->getCellByColumnAndRow(ord($currentColumn) - 65, $currentRow)->getValue();
-                /* 如果输出汉字有乱码，则需将输出内容用iconv函数进行编码转换，如下将gb2312编码转为utf-8编码输出 */
-                //echo iconv('utf-8','gb2312', $val); 
-
-
-                echo $val . "<hr>";
-                die;
-            }
-            die;
+    public function excelRead($excelFile, $startRow, $endRow) {
+        include_once Yii::$app->vendorPath . '/PHPExcel/PHPExcel.php';
+        $excelReader = \PHPExcel_IOFactory::createReader("Excel2007");
+        $excelReader->setReadDataOnly(true);
+        //如果有指定行数，则设置过滤器
+        if ($startRow && $endRow) {
+            $perf = new Phpexcelreadfilter();
+            $perf->startRow = $startRow;
+            $perf->endRow = $endRow;
+            $excelReader->setReadFilter($perf);
         }
-        echo "asssssssssd<hr>";
-        echo $filexcelname;
-        die;
+        $phpexcel = $excelReader->load($excelFile);
+        $activeSheet = $phpexcel->getActiveSheet();
+        if (!$endRow) {
+            $endRow = $activeSheet->getHighestRow(); //总行数
+        }
+        $highestColumn = $activeSheet->getHighestColumn(); //最后列数所对应的字母，例如第2行就是B
+        $highestColumnIndex = \PHPExcel_Cell::columnIndexFromString($highestColumn); //总列数
+
+        $data = array();
+        for ($row = $startRow; $row <= $endRow; $row++) {
+            for ($col = 0; $col < $highestColumnIndex; $col++) {
+                //时间 格式 转换
+                //更新日期  加入TOP10   退出Top10  
+                if (($col == 82) || ($col == 24) || ($col == 15) || ($col == 148) || ($col == 150) || ($col == 151)) {
+                    if ($activeSheet->getCellByColumnAndRow($col, $row)->getDataType() == \PHPExcel_Cell_DataType::TYPE_NUMERIC) {
+                        $data[$row][] = \PHPExcel_Shared_Date::ExcelToPHP($activeSheet->getCellByColumnAndRow($col, $row)->getValue());
+                    } else {
+                        $data[$row][] = (string) $activeSheet->getCellByColumnAndRow($col, $row)->getValue();
+                    }
+                } else {
+                    $data[$row][] = (string) $activeSheet->getCellByColumnAndRow($col, $row)->getValue();
+                }
+            }
+        }
+        return $data;
     }
 
 }
