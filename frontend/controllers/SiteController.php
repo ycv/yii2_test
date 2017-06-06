@@ -72,7 +72,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        echo "sas";die;
         return $this->render('index');
     }
 
