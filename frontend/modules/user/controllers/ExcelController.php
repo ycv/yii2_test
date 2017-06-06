@@ -280,24 +280,41 @@ class ExcelController extends BaseUserController {
      * Excel读取
      */
     public function excelRead($filexcelname) {
-        //读取xlsx 文件内容 引入PHPexcel组件类
-        require Yii::$app->vendorPath . '/PHPExcel/PHPExcel/IOFactory.php';
-        
-        $objPHPExcelReader = \PHPExcel_IOFactory::load($filexcelname);  //加载excel文件
-
-        $sheet = $objPHPExcelReader->getSheet(0); // 读取第一个工作表(编号从 0 开始)
-        echo $highestRow = $sheet->getHighestRow(); // 取得总行数
-        echo "<hr>" . $filexcelname;
-        die;
-        $objPHPExcel = new \PHPExcel();
-
-
-
-
-
         echo $filexcelname;
         die;
 
+
+
+
+
+
+
+
+
+        //读取xlsx 文件内容 引入PHPexcel组件类
+        require Yii::$app->vendorPath . '/PHPExcel/PHPExcel/IOFactory.php';
+        $objPHPExcelReader = \PHPExcel_IOFactory::load($filexcelname);  //加载excel文件
+        /* 读取excel文件中的第一个工作表 */
+        $currentSheet = $objPHPExcelReader->getSheet(0); // 读取第一个工作表(编号从 0 开始)
+        /* 取得总行数 */
+        $allRow = $currentSheet->getHighestRow();
+        /* 取得最大的列号 */
+        $allColumn = $currentSheet->getHighestColumn();
+
+        for ($currentRow = 5; $currentRow <= $allRow; $currentRow++) {
+            /* 从第B列开始输出 */
+            for ($currentColumn = 'B'; $currentColumn <= $allColumn; $currentColumn++) {
+                /*  ord()将字符转为十进制数 */
+                $val = $currentSheet->getCellByColumnAndRow(ord($currentColumn) - 65, $currentRow)->getValue();
+                /* 如果输出汉字有乱码，则需将输出内容用iconv函数进行编码转换，如下将gb2312编码转为utf-8编码输出 */
+                //echo iconv('utf-8','gb2312', $val); 
+
+
+                echo $val . "<hr>";
+                die;
+            }
+            die;
+        }
         echo "asssssssssd<hr>";
         echo $filexcelname;
         die;
