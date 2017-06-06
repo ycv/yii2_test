@@ -46,6 +46,37 @@ class ExcelController extends BaseUserController {
      */
     public function actionExcelexport() {
 
+        $data = array(
+            0 => array(
+                'id' => 1001,
+                'username' => '张飞',
+                'password' => '123456',
+                'address' => '三国时高老庄250巷101室'
+            ),
+            1 => array(
+                'id' => 1002,
+                'username' => '关羽',
+                'password' => '123456',
+                'address' => '三国时花果山'
+            ),
+            2 => array(
+                'id' => 1003,
+                'username' => '曹操',
+                'password' => '123456',
+                'address' => '延安西路2055弄3号'
+            ),
+            3 => array(
+                'id' => 1004,
+                'username' => '刘备',
+                'password' => '654321',
+                'address' => '愚园路188号3309室'
+            )
+        );
+
+
+        echo "<pre>";
+        var_dump($data);
+        die;
         if (is_object($orderstrjson)) {
             $fileName = date("YmdHis");
 
@@ -265,8 +296,8 @@ class ExcelController extends BaseUserController {
             //保存为2003格式
             $objWriter = new \PHPExcel_Writer_Excel5($PHPExcel);
 
-
             $upload = new Upload();
+            //创建文件目录
             $dirpath = 'uploads/inquiry/';
             $upload->mkDirs($dirpath);
 
