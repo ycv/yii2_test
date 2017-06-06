@@ -21,7 +21,7 @@ return [
             'rules' => [
 //                //oauth2.0
 //                'POST oauth2/<action:\w+>' => 'oauth2/oauth2/<action>',
-                '' => 'site/index',
+                '' => 'site/index',//默认 路径
                 
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 
