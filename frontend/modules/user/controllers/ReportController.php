@@ -12,6 +12,7 @@ class ReportController extends BaseUserController {
 
     /**
      * 获取 Top10目录报表数据  
+     * sss
      */
     public function actionProjectreport() {
         //获取缓存组件
