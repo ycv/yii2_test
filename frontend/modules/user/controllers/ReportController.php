@@ -12,7 +12,7 @@ class ReportController extends BaseUserController {
 
     /**
      * 获取 Top10目录报表数据  
-     * zxcvv
+     * zx自行车自行车
      */
     public function actionProjectreport() {
         //获取缓存组件
