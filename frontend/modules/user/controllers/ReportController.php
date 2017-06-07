@@ -18,7 +18,8 @@ class ReportController extends BaseUserController {
         $oSetcache = YII::$app->cache;
 
         $oGetcache = $oSetcache->get("reportTop_directory");
-//        echo "<pre>";
+//        echo "<pre>";   
+//        
 //        var_dump($oGetcache);
 //        die;
         if (!$oGetcache) {
