@@ -1,1 +1,526 @@
- 
+ 2017-06-07 13:37:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2017-06-07 13:37:40 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2017-06-07 13:37:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2017-06-07 13:37:41 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2017-06-07 13:37:41 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\UrlRule::parseRequest] Request parsed with URL rule: 
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '/',
+    'match' => true,
+    'parent' => null,
+]
+2017-06-07 13:37:41 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'site/index'
+2017-06-07 13:37:41 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2017-06-07 13:37:41 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2017-06-07 13:37:41 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\views\site\index.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\controllers\SiteController.php:73
+2017-06-07 13:37:41 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\views\layouts\main.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\controllers\SiteController.php:73
+2017-06-07 13:37:41 [::1][-][-][info][yii\web\Session::open] Session started
+    in G:\workspaces_NetBeans\yii2_test\frontend\views\layouts\main.php:44
+    in G:\workspaces_NetBeans\yii2_test\frontend\controllers\SiteController.php:73
+2017-06-07 13:37:40 [::1][-][-][info][application] $_COOKIE = [
+    'webToken' => 'c2ae12c1-0a91-40c7-b224-2609093d27d2'
+    'PHPSESSID' => 'u5qihorq3dpjvm5vf6gpfem8u7'
+    'advanced-frontend' => 'temceug05if318k6e4sdgio381'
+    '_csrf-frontend' => '6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RMArfkGwN3jKqQjv_SH8TdXibrJRytXR\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8285'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'webToken=c2ae12c1-0a91-40c7-b224-2609093d27d2; PHPSESSID=u5qihorq3dpjvm5vf6gpfem8u7; advanced-frontend=temceug05if318k6e4sdgio381; _csrf-frontend=6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RMArfkGwN3jKqQjv_SH8TdXibrJRytXR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;E:\\SQLServer2014\\SQLServer2014S\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\Client SDK\\ODBC\\110\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\120\\DTS\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\ManagementStudio\\;E:\\SQLServer2014\\SQLServer2014X\\120\\DTS\\Binn\\;%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;E:\\MySQL\\mysql-5.7.17-winx64\\bin;E:\\WAMP\\php-5.6.30-Win32-VC11-x64;E:\\WAMP\\php-5.6.30-Win32-VC11-x64\\ext;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win64) PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8285'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/workspaces_NetBeans/yii2_test/frontend/web/index.php'
+    'REMOTE_PORT' => '55262'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496813860.942
+    'REQUEST_TIME' => 1496813860
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '/',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '<controller:\\w+>/<action:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlRule::parseRequest] Request parsed with URL rule: user/<controller:\w+>/<action:\w+>
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>',
+    'match' => true,
+    'parent' => null,
+]
+2017-06-07 13:37:46 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'user/report/projectreport'
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\Module::getModule] Loading module: user
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: user/report/projectreport
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\modules\user\controllers\ReportController::actionProjectreport()
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\report\reportlist.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:40
+2017-06-07 13:37:46 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\layouts\report_comment.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:40
+2017-06-07 13:37:46 [::1][-][-][info][application] $_COOKIE = [
+    'webToken' => 'c2ae12c1-0a91-40c7-b224-2609093d27d2'
+    'PHPSESSID' => 'u5qihorq3dpjvm5vf6gpfem8u7'
+    'advanced-frontend' => 'temceug05if318k6e4sdgio381'
+    '_csrf-frontend' => '6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RMArfkGwN3jKqQjv_SH8TdXibrJRytXR\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8285'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8285/user/report/projectreport'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'webToken=c2ae12c1-0a91-40c7-b224-2609093d27d2; PHPSESSID=u5qihorq3dpjvm5vf6gpfem8u7; advanced-frontend=temceug05if318k6e4sdgio381; _csrf-frontend=6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RMArfkGwN3jKqQjv_SH8TdXibrJRytXR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;E:\\SQLServer2014\\SQLServer2014S\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\Client SDK\\ODBC\\110\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\120\\DTS\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\ManagementStudio\\;E:\\SQLServer2014\\SQLServer2014X\\120\\DTS\\Binn\\;%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;E:\\MySQL\\mysql-5.7.17-winx64\\bin;E:\\WAMP\\php-5.6.30-Win32-VC11-x64;E:\\WAMP\\php-5.6.30-Win32-VC11-x64\\ext;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win64) PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8285'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/workspaces_NetBeans/yii2_test/frontend/web/index.php'
+    'REMOTE_PORT' => '55271'
+    'REDIRECT_URL' => '/user/report/projectreport'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/report/projectreport'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496813866.012
+    'REQUEST_TIME' => 1496813866
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '/',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '<controller:\\w+>/<action:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlRule::parseRequest] Request parsed with URL rule: user/<controller:\w+>/<action:\w+>
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>',
+    'match' => true,
+    'parent' => null,
+]
+2017-06-07 13:37:51 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'user/report/projectreport'
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\Module::getModule] Loading module: user
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: user/report/projectreport
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\modules\user\controllers\ReportController::actionProjectreport()
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\report\reportlist.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:40
+2017-06-07 13:37:51 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\layouts\report_comment.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:40
+2017-06-07 13:37:51 [::1][-][-][info][application] $_COOKIE = [
+    'webToken' => 'c2ae12c1-0a91-40c7-b224-2609093d27d2'
+    'PHPSESSID' => 'u5qihorq3dpjvm5vf6gpfem8u7'
+    'advanced-frontend' => 'temceug05if318k6e4sdgio381'
+    '_csrf-frontend' => '6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RMArfkGwN3jKqQjv_SH8TdXibrJRytXR\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8285'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8285/user/report/projectreport'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'webToken=c2ae12c1-0a91-40c7-b224-2609093d27d2; PHPSESSID=u5qihorq3dpjvm5vf6gpfem8u7; advanced-frontend=temceug05if318k6e4sdgio381; _csrf-frontend=6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RMArfkGwN3jKqQjv_SH8TdXibrJRytXR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;E:\\SQLServer2014\\SQLServer2014S\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\Client SDK\\ODBC\\110\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\120\\DTS\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\ManagementStudio\\;E:\\SQLServer2014\\SQLServer2014X\\120\\DTS\\Binn\\;%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;E:\\MySQL\\mysql-5.7.17-winx64\\bin;E:\\WAMP\\php-5.6.30-Win32-VC11-x64;E:\\WAMP\\php-5.6.30-Win32-VC11-x64\\ext;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win64) PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8285'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/workspaces_NetBeans/yii2_test/frontend/web/index.php'
+    'REMOTE_PORT' => '55276'
+    'REDIRECT_URL' => '/user/report/projectreport'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/report/projectreport'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496813871.254
+    'REQUEST_TIME' => 1496813871
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '/',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '<controller:\\w+>/<action:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlRule::parseRequest] Request parsed with URL rule: user/<controller:\w+>/<action:\w+>
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>',
+    'match' => true,
+    'parent' => null,
+]
+2017-06-07 13:37:59 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'user/report/reportprojectlist'
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\Module::getModule] Loading module: user
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: user/report/reportprojectlist
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\modules\user\controllers\ReportController::actionReportprojectlist()
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\report\reportprojectlist.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:48
+2017-06-07 13:37:59 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\layouts\report_comment.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:48
+2017-06-07 13:37:59 [::1][-][-][info][application] $_COOKIE = [
+    'webToken' => 'c2ae12c1-0a91-40c7-b224-2609093d27d2'
+    'PHPSESSID' => 'u5qihorq3dpjvm5vf6gpfem8u7'
+    'advanced-frontend' => 'temceug05if318k6e4sdgio381'
+    '_csrf-frontend' => '6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RMArfkGwN3jKqQjv_SH8TdXibrJRytXR\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8285'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8285/user/report/projectreport'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'webToken=c2ae12c1-0a91-40c7-b224-2609093d27d2; PHPSESSID=u5qihorq3dpjvm5vf6gpfem8u7; advanced-frontend=temceug05if318k6e4sdgio381; _csrf-frontend=6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RMArfkGwN3jKqQjv_SH8TdXibrJRytXR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;E:\\SQLServer2014\\SQLServer2014S\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\Client SDK\\ODBC\\110\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\120\\DTS\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\ManagementStudio\\;E:\\SQLServer2014\\SQLServer2014X\\120\\DTS\\Binn\\;%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;E:\\MySQL\\mysql-5.7.17-winx64\\bin;E:\\WAMP\\php-5.6.30-Win32-VC11-x64;E:\\WAMP\\php-5.6.30-Win32-VC11-x64\\ext;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win64) PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8285'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/workspaces_NetBeans/yii2_test/frontend/web/index.php'
+    'REMOTE_PORT' => '55283'
+    'REDIRECT_URL' => '/user/report/reportprojectlist'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/report/reportprojectlist'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496813879.127
+    'REQUEST_TIME' => 1496813879
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'debug/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '/',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => '<controller:\\w+>/<action:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlRule::parseRequest] Request parsed with URL rule: user/<controller:\w+>/<action:\w+>
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'user/<controller:\\w+>/<action:\\w+>',
+    'match' => true,
+    'parent' => null,
+]
+2017-06-07 13:38:01 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'user/report/projectreport'
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\Module::getModule] Loading module: user
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: user/report/projectreport
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\modules\user\controllers\ReportController::actionProjectreport()
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\report\reportlist.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:40
+2017-06-07 13:38:01 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: G:\workspaces_NetBeans\yii2_test\frontend\modules\user\views\layouts\report_comment.php
+    in G:\workspaces_NetBeans\yii2_test\frontend\modules\user\controllers\ReportController.php:40
+2017-06-07 13:38:01 [::1][-][-][info][application] $_COOKIE = [
+    'webToken' => 'c2ae12c1-0a91-40c7-b224-2609093d27d2'
+    'PHPSESSID' => 'u5qihorq3dpjvm5vf6gpfem8u7'
+    'advanced-frontend' => 'temceug05if318k6e4sdgio381'
+    '_csrf-frontend' => '6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RMArfkGwN3jKqQjv_SH8TdXibrJRytXR\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8285'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8285/user/report/reportprojectlist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'webToken=c2ae12c1-0a91-40c7-b224-2609093d27d2; PHPSESSID=u5qihorq3dpjvm5vf6gpfem8u7; advanced-frontend=temceug05if318k6e4sdgio381; _csrf-frontend=6a8bfcac0f0479db9496f39899556fd3450870a85cc7221748cbb0ea25b49631a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RMArfkGwN3jKqQjv_SH8TdXibrJRytXR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;E:\\SQLServer2014\\SQLServer2014S\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\Client SDK\\ODBC\\110\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\;E:\\SQLServer2014\\SQLServer2014S\\120\\DTS\\Binn\\;E:\\SQLServer2014\\SQLServer2014X\\120\\Tools\\Binn\\ManagementStudio\\;E:\\SQLServer2014\\SQLServer2014X\\120\\DTS\\Binn\\;%JAVA_HOME%\\bin;%JAVA_HOME%\\jre\\bin;E:\\MySQL\\mysql-5.7.17-winx64\\bin;E:\\WAMP\\php-5.6.30-Win32-VC11-x64;E:\\WAMP\\php-5.6.30-Win32-VC11-x64\\ext;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win64) PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8285'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/workspaces_NetBeans/yii2_test/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/workspaces_NetBeans/yii2_test/frontend/web/index.php'
+    'REMOTE_PORT' => '55289'
+    'REDIRECT_URL' => '/user/report/projectreport'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/report/projectreport'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496813881.078
+    'REQUEST_TIME' => 1496813881
+]
