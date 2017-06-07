@@ -40,7 +40,7 @@ AppAsset::register($this);
                                 <a style="cursor:pointer;"><em>项目统计</em><i>Count</i></a>
                             </li>
                             <li class="<?= Yii::$app->controller->action->id == 'projectreport' ? 'thisli' : '' ?>" id="report_list_projectreport" >
-                                <a href="<?= Url::toRoute(['/user/report/projectreport']) ?>"><em>top10目录</em><i></i></a>
+                                <a style="cursor:pointer;"><em>top10目录</em><i></i></a>
                             </li>
                             <li>
                                 <a style="cursor:pointer;"><em>Top10明细</em><i></i></a>
