@@ -19,9 +19,15 @@ $(function () {
         MenuMove($(this), (mNow * 104 + mt), 0);
     });
 
+
     menus.click(function () {
+//        $(".t_c_bottom ul li").removeClass("thisli");
+//        if (!$("#" + $(this).attr("id")).hasClass("thisli")) {
         getReportListDatas($(this).attr("id"));
+//            $("#" + $(this).attr("id")).addClass("thisli");
+//        }
     });
+
 
     var MenuAuto;
     function MenuMove(tn, lefts, move) {
