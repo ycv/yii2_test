@@ -15,25 +15,35 @@ $this->title = 'Top10目录';
 <?= Html::jsFile('@web/statics/report/js/sortable_table.min.js') ?>
 
 <script type='text/javascript'>
+    function Hidden_Layer_ON() {
+        $(".Hidden_Layer_DIV").show();
+        $(".Hidden_Layer_IMG").show();
+    }
+    function Hidden_Layer_OFF() {
+        $(".Hidden_Layer_DIV").hide();
+        $(".Hidden_Layer_IMG").hide();
+    }
     //默认 Top10目录
     getReportListDatas("report_list_projectreport");
 
 
     function getReportListDatas(id) {
+        Hidden_Layer_ON();
         $.ajax({
             type: "POST",
             dataType: "json",
             data: {'reporttype': id, '_csrf-frontend': _csrf_frontend},
-            url: basepath + "/user/report/getreportlistdatas",
+            url: basepath + "/user/report/getreportlistdatas2",
             async: true,
             success: function (json) {
                 if (json.retval) {
                     setReportHTML_Top(json.data);
                 } else {
                 }
+                Hidden_Layer_OFF();
             },
             error: function () {
-                console.log('error');
+                alert("error");
             }
         });
     }
@@ -60,6 +70,7 @@ $this->title = 'Top10目录';
         $(".fht-table-wrapper .fht-tbody").css("overflow-y", "scroll");
         $(".fht-table-wrapper .fht-tbody").css("overflow-x", "hidden");
         $("#myTable05").css("width", "100%");
+
     }
 
 

@@ -1,0 +1,24 @@
+.Hidden_Layer_DIV {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/hei.png") repeat;
+    z-index: 111112;
+}
+.Hidden_Layer_IMG {
+    display: none;
+    width: 300px;
+    padding: 20px;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    z-index: 111113;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin:0 auto;
+}

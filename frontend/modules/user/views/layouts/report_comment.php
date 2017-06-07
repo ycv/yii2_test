@@ -14,15 +14,25 @@ AppAsset::register($this);
         <title><?= Html::encode($this->title) ?></title>
         <!--引用css-->
         <?= Html::cssFile('@web/statics/common/css/report_base.css') ?>
+        <?= Html::cssFile('@web/statics/common/css/hidden_layer.css') ?>
+
         <!--引用js-->
         <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
         <?= Html::jsFile('@web/statics/common/js/reportother.js') ?>
+
     </head>
     <script type="text/javascript">
         var basepath = '<?= Yii::$app->request->hostInfo ?>';
         var _csrf_frontend = '<?= Yii::$app->request->csrfToken ?>';
     </script>
     <body>
+        <!-- 隐藏层 -->
+        <div class="Hidden_Layer_DIV"></div>
+        <div class="Hidden_Layer_IMG"><img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>loading.gif" style="width:100%;height: 100%;"/></div>
+        <!-- /隐藏层 -->
+
+
+
         <!--头部菜单-->
         <div class="top">
             <div class="w t_cen">
