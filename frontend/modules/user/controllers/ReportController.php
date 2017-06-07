@@ -11,7 +11,7 @@ class ReportController extends BaseUserController {
     public $layout = "report_comment";
 
     /**
-     * 获取 Top10目录报表数据 自行车
+     * 获取 Top10目录报表数据 
      */
     public function actionProjectreport() {
         //获取缓存组件
@@ -20,7 +20,6 @@ class ReportController extends BaseUserController {
         $oGetcache = $oSetcache->get("reportTop_directory");
 //        echo "<pre>";
 //        var_dump($oGetcache);
-//        是是是
 //        die;
         if (!$oGetcache) {
             $ReportFrom = new ReportFrom();

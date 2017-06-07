@@ -15,10 +15,14 @@ $(function () {
     thisMenu.css({left: (mNow * 104 + mt) + "px"});
     menus.hover(function () {
         MenuMove($(this), ($(this).index() * 104 + mt), 1);
-        getReportListDatas($(this).attr("id"));
     }, function () {
         MenuMove($(this), (mNow * 104 + mt), 0);
     });
+
+    menus.click(function () {
+        getReportListDatas($(this).attr("id"));
+    });
+
     var MenuAuto;
     function MenuMove(tn, lefts, move) {
         var ti = tn.index();
@@ -41,6 +45,7 @@ $(function () {
 });
 
 function getReportListDatas(id) {
+    console.log(id);
     return;
     //获取reportDatas 缓存数据   把字符串转换成JSON对象
     var reportDatas = JSON.parse(localStorage.getItem("ReportDatas" + id));
