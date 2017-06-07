@@ -71,7 +71,7 @@ $this->title = 'Top10目录';
      */
 </script>
 
-<div  style="height: 400px;width: 100%;">
+<div style="height: 400px;width: 100%;">
     <!-- Top10目录 -->
     <table class="fancyDarkTable" id="myTable05" cellpadding="0" cellspacing="0" style="width: 90%;"></table>
 </div>

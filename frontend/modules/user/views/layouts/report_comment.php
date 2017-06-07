@@ -34,7 +34,8 @@ AppAsset::register($this);
                     <div class="t_c_bottom">
                         <ul>
                             <li class="<?= Yii::$app->controller->action->id == 'reportprojectlist' ? 'thisli' : '' ?>" id="report_list_reportprojectlist">
-                                <a href="<?= Url::toRoute(['/user/report/reportprojectlist']) ?>"><em>项目跟踪报表</em><i></i></a>
+                                <!--  Url::toRoute(['/user/report/reportprojectlist']) -->
+                                <a style="cursor:pointer;"><em>项目跟踪报表</em><i></i></a>
                             </li>
                             <li>
                                 <a style="cursor:pointer;"><em>项目统计</em><i>Count</i></a>
