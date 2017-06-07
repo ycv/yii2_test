@@ -12,7 +12,6 @@ class ExcelController extends BaseUserController {
     public $layout = "userlist_comment";
 
     /**
-     * sswwwwwwwww
      * Excel导入  
      */
     public function actionExcelimport() {
