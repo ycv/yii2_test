@@ -33,7 +33,7 @@ $this->title = 'Top10目录';
             type: "POST",
             dataType: "json",
             data: {'reporttype': id, '_csrf-frontend': _csrf_frontend},
-            url: basepath + "/user/report/getreportlistdatas2",
+            url: basepath + "/user/report/getreportlistdatas",
             async: true,
             success: function (json) {
                 if (json.retval) {

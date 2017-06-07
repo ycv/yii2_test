@@ -13,12 +13,12 @@ AppAsset::register($this);
         <meta http-equiv="Content-Type" content="text/html" charset="<?= Yii::$app->charset ?>"/>
         <title><?= Html::encode($this->title) ?></title>
         <!--引用css-->
-        <?= Html::cssFile('@web/statics/common/css/report_base.css') ?>
+        <?= Html::cssFile('@web/statics/common/report/css/report_base.css') ?>
         <?= Html::cssFile('@web/statics/common/css/hidden_layer.css') ?>
 
         <!--引用js-->
         <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
-        <?= Html::jsFile('@web/statics/common/js/reportother.js') ?>
+        <?= Html::jsFile('@web/statics/common/report/js/reportother.js') ?>
 
     </head>
     <script type="text/javascript">
@@ -36,7 +36,7 @@ AppAsset::register($this);
         <!--头部菜单-->
         <div class="top">
             <div class="w t_cen">
-                <div class="t_c_logo"><a href="index.html"><img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/images/') ?>logo.png" /></a></div>
+                <div class="t_c_logo"><a href="<?= Url::toRoute(['/']) ?>"><img src="<?= Yii::$app->request->hostInfo ?><?= Yii::getAlias('@web/statics/common/report/images/') ?>logo.png" /></a></div>
                 <div class="t_c_lr t_c_left"></div>
                 <div class="t_c_cen">
                     <div class="t_c_top">
