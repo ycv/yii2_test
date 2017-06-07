@@ -56,6 +56,10 @@ $this->title = 'Top10目录';
         $("#myTable05").html(listHTML);
         $('#myTable05').fixedHeaderTable({altClass: 'odd', footer: true, cloneHeadToFoot: true, autoShow: false});
         $('#myTable05').fixedHeaderTable('show', 1500);
+
+        $(".fht-table-wrapper .fht-tbody").css("overflow-y", "scroll");
+        $(".fht-table-wrapper .fht-tbody").css("overflow-x", "hidden");
+        $("#myTable05").css("width", "100%");
     }
 
 
@@ -71,9 +75,9 @@ $this->title = 'Top10目录';
      */
 </script>
 
-<div style="height: 400px;width: 100%;">
+<div style="height: 420px;width: 100%;">
     <!-- Top10目录 -->
-    <table class="fancyDarkTable" id="myTable05" cellpadding="0" cellspacing="0" style="width: 90%;"></table>
+    <table class="fancyDarkTable" id="myTable05" cellpadding="0" cellspacing="0" style="width: 100%;"></table>
 </div>
 <div class="clear"></div>
 
