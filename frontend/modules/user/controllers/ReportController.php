@@ -29,7 +29,8 @@ class ReportController extends BaseUserController {
      * jquery 获取项目跟踪报表数据
      */
     public function actionGetreportlistdatas() {
-        //sleep(秒) usleep(毫秒) 让它睡上一会。
+        
+        //sleep(秒) usleep(毫秒) 让它睡上一会。  
         sleep(1);
 
 
