@@ -37,12 +37,4 @@ $this->title = 'zxczx';
         });
     });
 </script>
-<style type="text/css" class="init">
-    /* Ensure that the demo table scrolls */
-    th, td {
-        white-space: nowrap;
-        padding-left: 40px !important;
-        padding-right: 40px !important;
-    }
-    div.dataTables_wrapper {
-        w
+ 
