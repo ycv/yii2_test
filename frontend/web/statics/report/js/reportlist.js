@@ -20,7 +20,7 @@ function getReportListDatas(id) {
         async: true,
         success: function (json) {
             if (json.retval) {
-//                $("#myTable05").removeAttr("class");
+                $("#myTable05").removeAttr("class");
                 //Top10目录
                 if ("report_list_projectreport" === id) {
                     setReportHTML_Top(json.data);

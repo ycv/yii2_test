@@ -29,7 +29,7 @@ class ReportController extends BaseUserController {
      * jquery 获取项目跟踪报表数据
      */
     public function actionGetreportlistdatas() {
-        
+
         //sleep(秒) usleep(毫秒) 让它睡上一会。 
         sleep(1);
 
@@ -67,6 +67,24 @@ class ReportController extends BaseUserController {
             $json ['retval'] = true;
         }
 
+        echo json_encode($json);
+        die();
+    }
+
+    /**
+     * demo array
+     */
+    public function actionGetdemoarray() {
+        $data = array();
+        for ($t = 0; $t < 200; $t++) {
+            $data[$t][] = rand($t * 10, $t * 100);
+            $data[$t][] = "Tiger NixTiger NixonTiger Nixonon";
+            $data[$t][] = "$320,80";
+            $data[$t][] = "Tiger Nixon";
+            $data[$t][] = "System Nixon";
+            $data[$t][] = "Tiger 5421";
+        }
+        $json ['data'] = $data;
         echo json_encode($json);
         die();
     }
