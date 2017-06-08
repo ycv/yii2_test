@@ -22,7 +22,7 @@ $this->title = 'zxczx';
 
 <script type="text/javascript" language="javascript" class="init">
     $(document).ready(function () {
-        $('#example').DataTable({
+        $('#myTable05').DataTable({
 //            "ajax": "data/newjson.json",
             scrollY: "260px",
             scrollX: true,
@@ -45,12 +45,11 @@ $this->title = 'zxczx';
         padding-right: 40px !important;
     }
     div.dataTables_wrapper {
-        width: 800px;
         margin: 0 auto;
     }
 
 </style>
-<table id="example" class="stripe row-border order-column" cellspacing="0" width="100%">
+<table id="myTable05" class="stripe row-border order-column" cellspacing="0" width="100%">
     <thead>
         <tr>
             <th rowspan="2">Nawwme</th>
