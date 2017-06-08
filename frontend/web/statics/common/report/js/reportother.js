@@ -8,8 +8,9 @@ $(function () {
     var mt = 161;//默认距离
     var mNow = 0;//获取当前的li
     for (var i = 0; i < menus.length; i++) {
-        if (menus.eq(i).hasClass("thisli"))
+        if (menus.eq(i).hasClass("thisli")) {
             mNow = i;
+        }
     }
     //给定 thisli 默认位置
     thisMenu.css({left: (mNow * 104 + mt) + "px"});
@@ -21,13 +22,11 @@ $(function () {
 
 
     menus.click(function () {
-//        $(".t_c_bottom ul li").removeClass("thisli");
-//        if (!$("#" + $(this).attr("id")).hasClass("thisli")) {
-        getReportListDatas($(this).attr("id"));
-//            $("#" + $(this).attr("id")).addClass("thisli");
-//        }
+        if (mNow !== $(".t_c_bottom ul li").index(this)) {
+            mNow = $(".t_c_bottom ul li").index(this);
+            getReportListDatas($(this).attr("id"));
+        }
     });
-
 
     var MenuAuto;
     function MenuMove(tn, lefts, move) {
