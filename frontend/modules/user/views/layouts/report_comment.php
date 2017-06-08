@@ -53,7 +53,7 @@ AppAsset::register($this);
                             </li>
                             <!--  Yii::$app->controller->action->id == 'projectreport' ? 'thisli' : '' -->
 
-                            <li id="report_list_projectreport">
+                            <li id="report_list_projectreport" class="thisli" >
                                 <a style="cursor:pointer;"><em>top10目录</em><i></i></a>
                             </li>
                             <li>
