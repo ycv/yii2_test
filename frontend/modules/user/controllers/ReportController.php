@@ -11,18 +11,17 @@ class ReportController extends BaseUserController {
     public $layout = "report_comment";
 
     /**
-     * 获取 Top10目录报表数据  
+     * 获取项目跟踪报表数据
      */
     public function actionProjectreport() {
         return $this->render('reportlist');
     }
 
     /**
-     * 获取项目跟踪报表数据
+     * 获取 Top10目录报表数据   
      */
     public function actionReportprojectlist() {
-        $oGetcache = array();
-        return $this->render('reportprojectlist', ["reportArr" => $oGetcache]);
+        return $this->render('reportprojectlist');
     }
 
     /**
@@ -70,11 +69,12 @@ class ReportController extends BaseUserController {
      * demo array
      */
     public function actionGetdemoarray() {
+        sleep(2);
         $data = array();
         for ($t = 0; $t < 200; $t++) {
             $data[$t][] = rand($t * 10, $t * 100);
             $data[$t][] = "Tiger NixTiger NixonTiger Nixonon";
-            $data[$t][] = "$320,80";
+            $data[$t][] = "$3x20,80";
             $data[$t][] = "Tiger Nixon";
             $data[$t][] = "System Nixon";
             $data[$t][] = "Tiger 5421";

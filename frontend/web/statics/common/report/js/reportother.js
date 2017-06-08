@@ -24,7 +24,16 @@ $(function () {
     menus.click(function () {
         if (mNow !== $(".t_c_bottom ul li").index(this)) {
             mNow = $(".t_c_bottom ul li").index(this);
-            getReportListDatas($(this).attr("id"));
+
+            //Top10目录报表数据
+            if ("report_list_projectreport" === $(this).attr("id")) {
+                location.href = basepath + "/user/report/reportprojectlist";
+            }
+
+            //项目跟踪报表
+            if ("report_list_reportprojectlist" === $(this).attr("id")) {
+                location.href = basepath + "/user/report/projectreport";
+            }
         }
     });
 
@@ -48,3 +57,13 @@ $(function () {
     }
 
 });
+
+
+function Hidden_Layer_ON() {
+    $(".Hidden_Layer_DIV").show();
+    $(".Hidden_Layer_IMG").show();
+}
+function Hidden_Layer_OFF() {
+    $(".Hidden_Layer_DIV").hide();
+    $(".Hidden_Layer_IMG").hide();
+}

@@ -16,7 +16,6 @@ $this->title = 'Txxxxxop10目录';
 <?= Html::jsFile('@web/statics/report/js/reportlist.js') ?>
 
 <script type='text/javascript'>
-
 </script>
 
 <div style="height: 420px;width: 100%;">

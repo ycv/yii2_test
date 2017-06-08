@@ -1,62 +1,12 @@
-function Hidden_Layer_ON() {
-    $(".Hidden_Layer_DIV").show();
-    $(".Hidden_Layer_IMG").show();
-}
-function Hidden_Layer_OFF() {
-    $(".Hidden_Layer_DIV").hide();
-    $(".Hidden_Layer_IMG").hide();
-}
-
 //默认 top10目录
-getReportListDatas("report_list_reportprojectlist");
-
+getReportListDatas("report_list_projectreport");
 
 function getReportListDatas(id) {
-    console.log(id);
-    return false;
     Hidden_Layer_ON();
-
     //Top10目录
     if ("report_list_projectreport" === id) {
         getAjaxListDatas(id);
     }
-
-    //项目跟踪报表
-    if ("report_list_reportprojectlist" === id) {
-        setDataTablesHead(id);
-    }
-
-    console.log(id);
-    Hidden_Layer_OFF();
-
-
-
-}
-
-function setDataTablesHead(id) {
-
-    $("#myTable05").empty();
-    $("#myTable05").removeAttr("class");
-    if (!$("#myTable05").hasClass("stripe")) {
-        $("#myTable05").addClass("stripe row-border order-column");
-    }
-    var listHTML = '<thead><tr><th rowspan="2">Nawwme</th><th colspan="2">HR Information</th><th colspan="3">Contact</th></tr>';
-    listHTML += '<tr><th>Position</th><th>Salary</th><th>Office</th><th>Extn.</th><th>E-mail</th></tr></thead>';
-    listHTML += '<tfoot><tr><th>Name</th><th>Position</th><th>Salary</th><th>Office</th><th>Extn.</th><th>E-mail</th></tr></tfoot>';
-    $("#myTable05").html(listHTML);
-    $('#myTable05').DataTable({
-        "ajax": basepath + "/user/report/getdemoarray",
-        scrollY: "260px",
-        scrollX: true,
-        scrollCollapse: true,
-        paging: false,
-        columnDefs: [
-            {width: '20%', targets: 0}
-        ],
-        fixedColumns: {
-            leftColumns: 1
-        }
-    });
 }
 
 function getAjaxListDatas(id) {
@@ -72,6 +22,7 @@ function getAjaxListDatas(id) {
                 setReportHTML_Top(json.data);
             } else {
             }
+            Hidden_Layer_OFF();
         },
         error: function () {
             alert("error");
