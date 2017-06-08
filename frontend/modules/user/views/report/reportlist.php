@@ -6,7 +6,7 @@ use yii\helpers\Url;
 
 AppAsset::register($this);
 
-$this->title = 'Txxxxxop飒飒10目录';
+$this->title = '项目跟踪报表';
 ?>
 <!--引用css-->
 <?= Html::cssFile('@web/statics/common/report/css/jquery-ui.css') ?>
