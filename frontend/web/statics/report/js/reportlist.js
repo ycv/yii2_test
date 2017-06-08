@@ -8,10 +8,12 @@ function Hidden_Layer_OFF() {
 }
 
 //默认 top10目录
-getReportListDatas("report_list_projectreport");
+getReportListDatas("report_list_reportprojectlist");
 
 
 function getReportListDatas(id) {
+    console.log(id);
+    return false;
     Hidden_Layer_ON();
 
     //Top10目录

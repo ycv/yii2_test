@@ -17,7 +17,7 @@ AppAsset::register($this);
         <?= Html::cssFile('@web/statics/common/css/hidden_layer.css') ?>
 
         <!--引用js-->
-        <?= Html::jsFile('@web/statics/common/js/jquery-1.8.3.min.js') ?>
+        <?= Html::jsFile('@web/statics/common/js/jquery-1.12.3.min.js') ?>
         <?= Html::jsFile('@web/statics/common/report/js/reportother.js') ?>
 
     </head>
@@ -44,7 +44,7 @@ AppAsset::register($this);
                     <div class="t_c_bottom">
                         <ul>
                             <!-- Yii::$app->controller->action->id == 'reportprojectlist' ? 'thisli' : ''  -->
-                            <li id="report_list_reportprojectlist">
+                            <li id="report_list_reportprojectlist" class="thisli" >
                                 <!--  Url::toRoute(['/user/report/reportprojectlist']) -->
                                 <a style="cursor:pointer;"><em>项目跟踪报表</em><i></i></a>
                             </li>
@@ -53,7 +53,7 @@ AppAsset::register($this);
                             </li>
                             <!--  Yii::$app->controller->action->id == 'projectreport' ? 'thisli' : '' -->
 
-                            <li id="report_list_projectreport" class="thisli" >
+                            <li id="report_list_projectreport">
                                 <a style="cursor:pointer;"><em>top10目录</em><i></i></a>
                             </li>
                             <li>
