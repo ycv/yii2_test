@@ -49,7 +49,7 @@ $this->title = 'zxczx';
     }
 
 </style>
-<table id="myTable05" class="stripe row-border order-column" cellspacing="0" width="100%">
+<table id="myTable05" class="stripe row-border order-column" cellpadding="0" cellspacing="0" style="width: 100%;">
     <thead>
         <tr>
             <th rowspan="2">Nawwme</th>

@@ -20,7 +20,13 @@ function getReportListDatas(id) {
         async: true,
         success: function (json) {
             if (json.retval) {
-                setReportHTML_Top(json.data);
+//                $("#myTable05").removeAttr("class");
+                //Top10目录
+                if ("report_list_projectreport" === id) {
+                    setReportHTML_Top(json.data);
+                }
+
+
             } else {
             }
             Hidden_Layer_OFF();
@@ -35,6 +41,10 @@ function getReportListDatas(id) {
  * Top10目录
  */
 function setReportHTML_Top(data) {
+    if (!$("#myTable05").hasClass("fancyDarkTable")) {
+        $("#myTable05").addClass("fancyDarkTable");
+    }
+
     $("#myTable05").empty();
     var listHTML = '<thead><tr><th width="40%">编号</th><th width="40%">项目名称</th><th width="10%">预计采购金额(K)</th></tr></thead>';
     listHTML += '<tbody>';

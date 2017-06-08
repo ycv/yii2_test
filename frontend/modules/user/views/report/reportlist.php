@@ -20,7 +20,7 @@ $this->title = 'Txop10目录';
 
 <div style="height: 420px;width: 100%;">
     <!-- Top10目录 -->
-    <table class="fancyDarkTable" id="myTable05" cellpadding="0" cellspacing="0" style="width: 100%;"></table>
+    <table id="myTable05" cellpadding="0" cellspacing="0" style="width: 100%;"></table>
 </div>
 <div class="clear"></div>
 
