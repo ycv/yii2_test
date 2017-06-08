@@ -24,7 +24,7 @@ $this->title = 'zxczx';
     $(document).ready(function () {
         $('#example').DataTable({
 //            "ajax": "data/newjson.json",
-            scrollY: "300px",
+            scrollY: "260px",
             scrollX: true,
             scrollCollapse: true,
             paging: false,
@@ -38,15 +38,6 @@ $this->title = 'zxczx';
     });
 </script>
 <style type="text/css" class="init">
-
-    body {
-        font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        background-color: #fff;
-    }
-
     /* Ensure that the demo table scrolls */
     th, td {
         white-space: nowrap;
