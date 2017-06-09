@@ -89,7 +89,23 @@ $this->title = '项目跟踪报表';
 
         function getReptortDatab() {
             $('#myTable05').DataTable({
-                "ajax": basepath + "/user/report/getdemoarray",
+//                "ajax": basepath + "/user/report/getdemoarray",
+//                bProcessing: true, //是否启用进度显示，进度条等等，对处理大量数据很有用处。
+//                bServerSide: true,//是否启用服务器处理数据源，必须sAjaxSource指明数据源位置
+                ajax: {
+                    type: "POST",
+                    dataType: "json",
+                    url: basepath + "/user/report/getdemoarray",
+                    data: {'reporttype': 'xx', '_csrf-frontend': _csrf_frontend},
+                    async: true,
+//                    success: function (json) {
+//
+//                    },
+                    error: function () {
+                        console.log("ssssssserror");
+                    }
+                },
+
                 scrollY: "260px",
                 scrollX: true,
                 scrollCollapse: true,
