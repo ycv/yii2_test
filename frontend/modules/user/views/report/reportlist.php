@@ -25,6 +25,12 @@ $this->title = '项目跟踪报表';
             Hidden_Layer_ON();
             $("#myTable05").empty();
             $("#myTable05").removeAttr("class");
+
+
+
+
+
+
             if (!$("#myTable05").hasClass("stripe")) {
                 $("#myTable05").addClass("stripe");
             }
@@ -56,7 +62,26 @@ $this->title = '项目跟踪报表';
             listHTML += '</thead>';
 
             listHTML += '<tfoot>';
-            listHTML += '<tr><th>编号</th><th>项目名称</th><th>区域</th><th>地址</th><th>所属行业</th><th>投资单位</th><th>规模(万)平方米</th><th>甲方联系人</th><th>电话</th><th>设计单位</th><th>设计师</th><th>设计院 跟踪人</th><th>工程进展</th><th>Position</th><th>Salary</th><th>Office</th><th>Extn.</th><th>E-mail</th></tr>';
+            listHTML += '<tr>\n\
+                    <th>编号</th>\n\
+                    <th>项目名称</th>\n\
+                    <th>区域</th>\n\
+                    <th>地址</th>\n\
+                    <th>所属行业</th>\n\
+                    <th>投资单位</th>\n\
+                    <th>规模(万)平方米</th>\n\
+                    <th>甲方联系人</th>\n\
+                    <th>电话</th>\n\
+                    <th>设计单位</th>\n\
+                    <th>设计师</th>\n\
+                    <th>设计院 跟踪人</th>\n\
+                    <th>工程进展</th>\n\
+                    <th>Position</th>\n\
+                    <th>Salary</th>\n\
+                    <th>Office</th>\n\
+                    <th>Extn.</th>\n\
+                    <th>E-mail</th>\n\
+                </tr>';
             listHTML += '</tfoot>';
 
             $("#myTable05").html(listHTML);
