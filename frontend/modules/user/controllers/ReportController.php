@@ -69,6 +69,11 @@ class ReportController extends BaseUserController {
      * demo array
      */
     public function actionGetdemoarray() {
+
+
+//        echo "<pre>";
+//        var_dump($_POST);
+//        die;
         sleep(2);
         $data = array();
         for ($t = 0; $t < 200; $t++) {
