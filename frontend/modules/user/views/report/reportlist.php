@@ -23,7 +23,6 @@ $this->title = '项目跟踪报表';
     $(document).ready(function () {
         function setReptortDataHead() {
             Hidden_Layer_ON();
-
             $("#myTable05").empty();
             $("#myTable05").removeAttr("class");
             if (!$("#myTable05").hasClass("stripe")) {
@@ -35,9 +34,31 @@ $this->title = '项目跟踪报表';
             if (!$("#myTable05").hasClass("order-column")) {
                 $("#myTable05").addClass("order-column");
             }
-            var listHTML = '<thead><tr><th rowspan="2">Nawwme</th><th colspan="2">HR Information</th><th colspan="3">Contact</th></tr>';
-            listHTML += '<tr><th>Position</th><th>Salary</th><th>Office</th><th>Extn.</th><th>E-mail</th></tr></thead>';
-            listHTML += '<tfoot><tr><th>Name</th><th>Position</th><th>Salary</th><th>Office</th><th>Extn.</th><th>E-mail</th></tr></tfoot>';
+
+            var listHTML = '<thead>';
+            listHTML += '<tr>\n\
+                    <th rowspan="2">编号</th>\n\
+                    <th rowspan="2">项目名称</th>\n\
+                    <th rowspan="2">区域</th>\n\
+                    <th rowspan="2">地址</th>\n\
+                    <th rowspan="2">所属行业</th>\n\
+                    <th rowspan="2">投资单位</th>\n\
+                    <th rowspan="2">规模(万)平方米</th>\n\
+                    <th rowspan="2">甲方联系人</th>\n\
+                    <th rowspan="2">电话</th>\n\
+                    <th rowspan="2">设计单位</th>\n\
+                    <th rowspan="2">设计师</th><th rowspan="2">设计院 跟踪人</th>\n\
+                    <th rowspan="2">工程进展</th>\n\
+                    <th colspan="2">HR Information</th>\n\
+                    <th colspan="3">Contact</th>\n\
+            </tr>';
+            listHTML += '<tr><th>Position</th><th>Salary</th><th>Office</th><th>Extn.</th><th>E-mail</th></tr>';
+            listHTML += '</thead>';
+
+            listHTML += '<tfoot>';
+            listHTML += '<tr><th>编号</th><th>项目名称</th><th>区域</th><th>地址</th><th>所属行业</th><th>投资单位</th><th>规模(万)平方米</th><th>甲方联系人</th><th>电话</th><th>设计单位</th><th>设计师</th><th>设计院 跟踪人</th><th>工程进展</th><th>Position</th><th>Salary</th><th>Office</th><th>Extn.</th><th>E-mail</th></tr>';
+            listHTML += '</tfoot>';
+
             $("#myTable05").html(listHTML);
         }
 
@@ -61,7 +82,6 @@ $this->title = '项目跟踪报表';
 
         setReptortDataHead();
         getReptortDatab();
-
     });
 </script>
 
