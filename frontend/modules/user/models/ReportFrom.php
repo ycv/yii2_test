@@ -16,7 +16,31 @@ class ReportFrom extends Model {
      * 获取项目跟踪报表数据 全部数据
      */
     public function getProjectReportLists() {
-        return Yii2TestProjectreport::find()->asArray()->all();
+//        return Yii2TestProjectreport::find()->asArray()->all();
+        $query = new Query();
+        $query->select([
+            "p.number p_name",
+            "p.entry_name p_entry_name",
+            "p.region p_region",
+            "p.address p_address",
+            "p.Industry_owned p_Industry_owned",
+            "p.Investment_unit p_Investment_unit",
+            "p.Scale p_Scale",
+            "p.Party_a_contact p_Party_a_contact",
+            "p.Telephone p_Telephone",
+            "p.Design_unit p_Design_unit",
+            "p.Designer p_Designer",
+            "p.Design_Institute_tracking_people p_Design_Institute_tracking_people",
+            "p.Engineering_progress p_Engineering_progress",
+            "p.medium_voltage_id p_medium_voltage_id",
+            "p.Low_voltage_cabinet_id p_Low_voltage_cabinet_id",
+            "p.Box_three_id p_Box_three_id",
+            "p.Visiting_record p_Visiting_record",
+            "p.Update_date p_Update_date"
+        ]);
+        $query->from(["p" => Yii2TestProjectreport::tableName()]);
+        $query->orderBy("p.id  ASC");
+        return $query->all();
     }
 
     /**

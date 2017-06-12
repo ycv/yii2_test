@@ -28,7 +28,6 @@ class ReportController extends BaseUserController {
      * jquery 获取项目跟踪报表数据
      */
     public function actionGetreportlistdatas() {
-
         //sleep(秒) usleep(毫秒) 让它睡上一会。 
         sleep(1);
 
@@ -44,15 +43,33 @@ class ReportController extends BaseUserController {
 
             if (!$oGetcache) {
                 $ReportFrom = new ReportFrom();
+                $reportTopLists = array();
+                switch ($setCacheTympId) {
+                    case "report_list_reportprojectlist_directory":
+                        //项目跟踪报表
+                        $reportTopLists = $ReportFrom->getProjectReportLists();
 
-                //Top10目录
-                $reportTopLists = $ReportFrom->getReportTopLists();
+//                        echo "<pre>";
+//                        var_dump($reportTopLists);
+//                        die;
+                        break;
+                    case "report_list_projectreport_directory":
+                        //Top10目录
+                        $reportTopLists = $ReportFrom->getReportTopLists();
+                        break;
+                    default:
+                        echo "xxxxxxxxxxxxxxerror";
+                        die;
+                        break;
+                }
 
 
                 //往缓存当中写数据 当add 添加重复缓存时 key 相同，第二条不会执行；当key已经存在时，add不会执行
                 $oSetcache->add($setCacheTympId, $reportTopLists, 7200); //存在7200秒
                 //读缓存
                 $oGetcache = $oSetcache->get($setCacheTympId);
+
+                unset($setCacheTympId);
                 unset($reportTopLists);
                 unset($ReportFrom);
                 unset($oSetcache);
@@ -71,10 +88,7 @@ class ReportController extends BaseUserController {
     public function actionGetdemoarray() {
 
 
-//        echo "<pre>";
-//        var_dump($_POST);
-//        die;
-        sleep(2);
+        sleep(1);
         $data = array();
         for ($t = 0; $t < 200; $t++) {
             $data[$t][] = rand($t * 10, $t * 100);
@@ -96,7 +110,9 @@ class ReportController extends BaseUserController {
             $data[$t][] = "System Nixon";
             $data[$t][] = "Tiger 5421";
         }
+
         $json ['data'] = $data;
+        $json ['retval'] = true;
         echo json_encode($json);
         die();
     }

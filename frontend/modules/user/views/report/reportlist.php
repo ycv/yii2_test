@@ -21,13 +21,10 @@ $this->title = '项目跟踪报表';
 
 <script type="text/javascript" language="javascript" class="init">
     $(document).ready(function () {
-        function setReptortDataHead() {
+        function setReptortDataHead(id) {
             Hidden_Layer_ON();
             $("#myTable05").empty();
             $("#myTable05").removeAttr("class");
-
-
-
 
 
 
@@ -87,16 +84,18 @@ $this->title = '项目跟踪报表';
             $("#myTable05").html(listHTML);
         }
 
-        function getReptortDatab() {
+        function getReptortDatab(id) {
+            //getreportlistdatas
             $('#myTable05').DataTable({
 //                "ajax": basepath + "/user/report/getdemoarray",
 //                bProcessing: true, //是否启用进度显示，进度条等等，对处理大量数据很有用处。
 //                bServerSide: true,//是否启用服务器处理数据源，必须sAjaxSource指明数据源位置
+
                 ajax: {
                     type: "POST",
                     dataType: "json",
-                    url: basepath + "/user/report/getdemoarray",
-                    data: {'reporttype': 'xx', '_csrf-frontend': _csrf_frontend},
+                    url: basepath + "/user/report/getreportlistdatas",
+                    data: {'reporttype': id, '_csrf-frontend': _csrf_frontend},
                     async: true,
 //                    success: function (json) {
 //
@@ -105,7 +104,31 @@ $this->title = '项目跟踪报表';
                         console.log("ssssssserror");
                     }
                 },
-
+                columns: [
+                    {data: "p_name"},
+                    {data: "p_entry_name"},
+                    {data: "p_region"},
+                    {data: "p_address"},
+                    {data: "p_Industry_owned"},
+                    {data: "p_Investment_unit"},
+                    {data: "p_Scale"},
+                    {data: "p_Party_a_contact"},
+                    {data: "p_Telephone"},
+                    {data: "p_Design_unit"},
+                    {data: "p_Designer"},
+                    {data: "p_Design_Institute_tracking_people"},
+                    {data: "p_Engineering_progress"},
+                    {data: "p_medium_voltage_id"},
+                    {data: "p_Low_voltage_cabinet_id"},
+                    {data: "p_Box_three_id"},
+                    {data: "p_Visiting_record"},
+                    {data: "p_Update_date"}
+//                    {data: {
+//                            _: "start_date.display",
+//                            sort: "start_date.timestamp"
+//                        }},
+                ],
+                "order": [], //排序 没写，默认不排序； "order": [[ 3, "desc" ]] 第三列 倒序
                 scrollY: "260px",
                 scrollX: true,
                 scrollCollapse: true,
@@ -121,8 +144,8 @@ $this->title = '项目跟踪报表';
         }
 
 
-        setReptortDataHead();
-        getReptortDatab();
+        setReptortDataHead('report_list_reportprojectlist');
+        getReptortDatab('report_list_reportprojectlist');
     });
 </script>
 
